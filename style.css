@@ -1,0 +1,641 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #dbdbdb;
+    margin-top: 20px;
+}
+
+/* Large thin text for the section titles */
+.large-thin-text {
+    font-size: 3.5rem;                          /* adjust this value to change the font size */
+    font-weight: 200;                           /* adjust this value to change the font weight */
+    font-style: normal;                         /* adjust this value to change the font style */
+    font-family: 'Helvetica Neue', sans-serif;  /* adjust this value to change the font family */
+    letter-spacing: 1px;                        /* adjust this value to change the letter spacing */
+    line-height: 1.2;                           /* adjust this value to change the line height */
+}
+
+/* Small thin text for the sub-section titles */
+.small-thin-text {
+    font-size: 1.5rem; /* adjust this value to change the font size */
+    font-weight: 200; /* adjust this value to change the font weight */
+    font-style: normal; /* adjust this value to change the font style */
+    font-family: 'Helvetica Neue', sans-serif; /* adjust this value to change the font family */
+    letter-spacing: 1px; /* adjust this value to change the letter spacing */
+    line-height: 1.2; /* adjust this value to change the line height */
+}
+
+
+table {
+    border: 0px;
+}
+
+.card {
+    background-color: #364359;
+    color: #d1d1d1;
+}
+
+.card-body {
+    text-align: justify;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* Layout */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+.openaiLogo {
+    opacity: 100%;
+    cursor: pointer;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+    .openaiLogo:hover {
+        opacity: 75%;
+    }
+
+dico {
+    column-count: 2;
+    padding-right: 5px;
+}
+
+
+.logoHover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+    .logoHover:hover {
+        opacity: 75%;
+    }
+
+.pdfLogoSettings {
+    opacity: 100%;
+    cursor: pointer;
+    max-height: 40px;
+    opacity: 40%;
+    margin-left: 0px;
+    margin-bottom: 17px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+    .pdfLogoSettings:hover {
+        opacity: 95%;
+    }
+
+.locationInfoPlusPDFlogo {
+    column-count: 3;
+    padding-right: 5px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+/* Profile Picture */
+#dpic {
+    grid-column: span 6;
+    text-align: right;
+}
+
+
+#dpic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+
+#ddesc {
+    padding-top: 20px;
+    padding-left: 20px;
+    grid-column: span 6;
+}
+
+@media (max-width: 991px) {
+    #dpic {
+        grid-column: span 12;
+        text-align: center;
+    }
+
+    #ddesc {
+        grid-column: span 12;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-weight: normal;
+    font-style: italic;
+    color: #999;
+    font-size: 16px;
+    padding: 0;
+    margin: 5px 0 10px 0;
+}
+
+@media (min-width: 992px) {
+    h2 {
+        max-width: 300px;
+    }
+}
+
+
+/*Link hover animation for white color animation*/
+.topLink {
+    cursor: pointer;
+    text-decoration: none;
+    color: #d1d1d1;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+    .topLink:hover {
+        color: white;
+    }
+
+    .topLink:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .topLink:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+/*Link hover animation for greyed-out color animation*/
+.topGreyLink {
+    cursor: pointer;
+    text-decoration: none;
+    color: #949494;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+    .topGreyLink:hover {
+        color: #949494;
+    }
+
+    .topGreyLink:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #949494;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .topGreyLink:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+
+hr {
+    margin: 15px 0;
+    height: 1px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, white));
+}
+
+
+.iico {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+    .iico:hover {
+        opacity: 75%;
+    }
+
+.symbolLogoClass {
+    width 10px;
+    height: 10px;
+    border:radius: 50%;
+}
+
+
+#demail {
+    margin-top: 10px;
+    color: #dfdfdf;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+.new1 {
+    background-image: -webkit-linear-gradient(left, #333, #dbdbdb, #333);
+    background-image: -moz-linear-gradient(left, #333, #dbdbdb, #333);
+    background-image: -o-linear-gradient(left, #333, #dbdbdb, #333);
+    margin: 25px 0px 25px 0px;
+}
+
+.ico {
+    grid-column: span 1;
+    vertical-align: top;
+    border-left: 2px solid #cfcfcf;
+    position: relative;
+}
+
+    .ico img {
+        border-radius: 5px;
+        width: 100%;
+        max-width: 80px;
+        margin-left: 10px;
+    }
+
+.desc {
+    grid-column: span 10;
+    vertical-align: top;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+    .desc h3 {
+        margin-top: 0px;
+    }
+
+    .desc h2 {
+        margin-top: -15px;
+        font-size: 15px;
+        color: grey;
+    }
+
+    /* Large rounded square for the PDF to sit inside a nice rounded edge frame */
+
+    .desc .pdfBlock {
+        width: 580px;
+        height: 580px;
+        background-color: grey;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* PDF window with specific file that allows user to scroll document */
+
+    .pdf-reader {
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+
+    /* The PDF block that makes the PDF window appear and disappear */
+
+    .color-block {
+        width: 580px;
+        height: 580px;
+        background-color: grey;
+        border-radius: 40px;
+        display: none;
+    }
+
+
+.companyName {
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+
+
+.entry {
+}
+
+.entry-dot {
+    position: absolute;
+    top: 0px;
+    left: -8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 7px;
+    background-color: #cfcfcf;
+    border: 2px solid #333;
+}
+
+.timespan {
+    grid-column: span 1;
+    font-size: 14px;
+    text-align: center;
+    padding-right: 5px;
+    color: #bbb;
+}
+
+.hassets {
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .hassets {
+        display: none;
+    }
+}
+
+.hasset {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.ctitle {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+#featured-talks .row {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-bottom: 30px;
+}
+
+.card {
+    grid-column: span 3;
+    vertical-align: top;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: white;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 10px rgba(0.15, 0.25, 0.5, 0.75);
+}
+
+@media (max-width: 991px) {
+    .card {
+        grid-column: span 6;
+    }
+
+    #featured-talks .row {
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}
+
+.card img {
+    border-radius: 5px;
+    width: 25%;
+}
+
+.cdesc {
+    height: 30px;
+    vertical-align: top;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .cdesc {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+}
+
+#pet-projects .row {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.project {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.pico {
+    float: left;
+    margin-right: 10px;
+}
+
+.pdesc {
+}
+
+.pend {
+    clear: both;
+}
+
+.pico img {
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.pub {
+    font-size: 14px;
+    border-left: 4px solid #aaa;
+    padding: 2px 0px 2px 10px;
+    margin-bottom: 10px;
+}
+
+.pub-title {
+    display: inline;
+    color: #333;
+}
+
+.pub-venue {
+    display: inline;
+    color: #090;
+}
+
+.pub-authors {
+    display: block;
+    color: #900;
+}
+
+.tul {
+    text-align: center;
+    padding: 0;
+}
+
+.til {
+    display: inline-block;
+    padding: 3px 15px 3px 15px;
+    margin-bottom: 5px;
+}
+
+.tilb {
+    border-right: 1px solid #ccc;
+}
+
+.nodot {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+/*Slider for the control panel images*/
+#slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.slide {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    margin: 0 2%;
+    border-radius: 10%;
+}
+
+    .slide:hover {
+        opacity: 80%;
+    }
+
+/*Pop up modal for the control panel images*/
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,1);
+    z-index: 1;
+}
+
+#modal-image {
+    max-width: 80%;
+    max-height: 80%;
+    margin: 10% auto;
+    display: block;
+    border-radius: 10%;
+}
+
+/*Close button for the modal for the control panel images*/
+#close-button {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+    #close-button:hover {
+        opacity: 60%;
+    }
+
+
+
+
+/*Bottom link styles for the footer buttons*/
+.bottomLink {
+    cursor: pointer;
+    text-decoration: none;
+    color: #b5b5b5;
+    margin-right: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+    .bottomLink:hover {
+        color: #dbdbdb;
+    }
+
+    .bottomLink:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #dbdbdb;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .bottomLink:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+
+
+/* Tabs for showing the details on Education Section */
+.tab {
+    overflow: hidden;
+    border: 1px solid #364359;
+    background-color: #364359;
+}
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        color: #ccc;
+        font-size: 17px;
+        border-radius: 10px;
+    }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #364359;
+            /*#1c4e99*/
+            color: #ccc;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #052a61;
+        }
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #364359;
+    border-top: none;
+}
