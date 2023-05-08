@@ -88,10 +88,9 @@ dico {
     }
 
 .pdfLogoSettings {
-    opacity: 100%;
+    opacity: 40%;
     cursor: pointer;
     max-height: 40px;
-    opacity: 40%;
     margin-left: 0px;
     margin-bottom: 17px;
     margin-right: 0px;
@@ -101,6 +100,25 @@ dico {
     .pdfLogoSettings:hover {
         opacity: 95%;
     }
+
+.infoLogoSettings {
+    opacity: 20%;
+    cursor: pointer;
+    max-height: 40px;
+    margin-left: 0px;
+    margin-bottom: 17px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+    .infoLogoSettings:hover {
+        opacity: 65%;
+    }
+
+/* Define the 'invert' class to apply the CSS filter for the info logo */
+.invert {
+    filter: invert(100%);
+}
 
 .locationInfoPlusPDFlogo {
     column-count: 3;
@@ -252,9 +270,9 @@ hr {
     }
 
 .symbolLogoClass {
-    width 10px;
+    width: 10px;
     height: 10px;
-    border:radius: 50%;
+    border-radius: 50%;
 }
 
 
@@ -315,6 +333,17 @@ hr {
         justify-content: center;
         align-items: center;
     }
+
+    /* InfoBlock for the info clicker */
+
+    .desc .infoBlock {
+        width: 60vw;
+        background-color: rgba(128, 128, 128, 0);
+        border-radius: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
 
     /* PDF window with specific file that allows user to scroll document */
 
