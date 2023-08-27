@@ -1,10 +1,23 @@
-﻿<!doctype html>
+﻿<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+*
+*   Credit should be given even if design
+*   is different from the initial one.
+*
+*   This website is based off the previous Tesla
+*   AI Director - Andrej Karpathy's portfolio
+*   page: https://karpathy.ai
+*
+*   ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Kurt J. Foster</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <div id="dhead" class="container">
@@ -64,11 +77,63 @@
 
     <div id="history" class="container">
 
+
+        <!-- Section of HP Maintenance Job Role with Retractable info box -->
+        <div class="entry row">
+            <!-- Date on Timeline -->
+            <div class="timespan">
+                2023 - Present
+            </div>
+            <div class="ico">
+                <div class="entry-dot"></div>
+                <a href="https://www.hpmuseum.net/divisions.php?did=18" target="_blank"><img src="images/HPLogo.jpeg" class="logoHover" /></a>
+            </div>
+            <div class="desc">
+                <!-- Title Section -->
+                <h3>Repair and Maintenance Technician</h3>
+                <!-- Title Sub-section -->
+                <p class="companyName">HP · Full-time <a class="bottomLink" target="_blank" href="https://www.kforce.com">Kforce Contractor</a></p>
+                <div id="locationInfoPlusPDFlogo">
+                    <table>
+                        <tr>
+                            <th>
+                                <h2>Aug 2023 - Present · 1 mos <br /> Corvallis, Oregon, United States</h2>
+                            </th>
+                            <th>
+                                <!-- INFO toggle image button -->
+                                <a id="toggle-button9"><img src="images/info-icon-logo.png" class="infoLogoSettings" /></a>
+                            </th>
+                            <th>
+                                <h2><br /></h2>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Detailed description -->
+                Troubleshooting and repairing electrical system components.<br /><br />
+                <!-- Info section that comes up when the INFO logo picture is clicked -->
+                <div class="color-block9">
+                    <div class="infoBlock">
+                        <!-- WE NEED TO BUILD A NEW CLASS MAYBE? TRY REGULAR TEXT HERE FIRST -->
+                        Repairing and maintaining a wide variety of industrial machinery.<br /><br />
+                        • Troubleshooting and repair of electrical and mechanical systems on custom built equipment<br />
+                        • Edit or create programs using contemporary command languages to control the equipment<br />
+                        • Ensure instruments are calibrated and verified on a regular basis<br />
+                        • Participate in the development of maintenance and operational documentation of equipment<br />
+                        • Evaluate spare parts needs and use available systems to warehouse and track inventory/availability<br />
+                        • Reads/interprets mechanical drawings, schematics, printouts, specifications, and test procedures<br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <!-- Updated Section of Kurtrek Job Role with Retractable info box -->
         <div class="entry row">
             <!-- Date on Timeline -->
             <div class="timespan">
-                2021 - Present
+                2021 - 2023
             </div>
             <div class="ico">
                 <div class="entry-dot"></div>
@@ -78,12 +143,12 @@
                 <!-- Title Section -->
                 <h3>Automation Technician</h3>
                 <!-- Title Sub-section -->
-                <p class="companyName">Kurtrek · Full-time</p>
+                <p class="companyName">Kurtrek, Proprietor · Full-time</p>
                 <div id="locationInfoPlusPDFlogo">
                     <table>
                         <tr>
                             <th>
-                                <h2>Mar 2021 - Present · 2 yrs 3 mos <br /> Corvallis, Oregon, United States</h2>
+                                <h2>Mar 2021 - Jul 2023 · 2 yrs 5 mos <br /> Corvallis, Oregon, United States</h2>
                             </th>
                             <th>
                                 <!-- INFO toggle image button -->
@@ -189,7 +254,7 @@
                 <!-- Title Section -->
                 <h3>Automation Technician</h3>
                 <!-- Title Sub-section -->
-                <p class="companyName">Kurtrek · Full-time</p>
+                <p class="companyName">Kurtrek, Proprietor · Full-time</p>
                 <div id="locationInfoPlusPDFlogo">
                     <table>
                         <tr>
@@ -364,7 +429,7 @@
                 • Telescope Optics                                                                                 <br /><br />
                 • TeXworks                                                                                 <br /><br />
                 • Basic programming                                                                                 <br />
-                    <p style="font-size: 18px;">C++ (Arduino & Console Commands), HTML, JavaScript, CSS</p><br />
+                <p style="font-size: 18px;">C++ (Arduino & Console Commands), HTML, JavaScript, CSS</p><br />
             </h1>
 
             <br /><br />
@@ -890,16 +955,72 @@
             <br><br><br>
 
             <footer style="margin-left: 25%; margin-right: 25%; ">
-                <p>Copyright © 2023 Kurt J. Foster. All rights reserved.</p>
+                <p>Copyright © <a id="p1"></a> Kurt J. Foster. All rights reserved.</p>
                 <p style="color: grey;">
                     Some of the tools I used to help build this website: <a class="bottomLink" target="_blank" href="https://platform.openai.com/codex-javascript-sandbox">Codex</a>, <a class="bottomLink" target="_blank" href="https://getbootstrap.com">getBootstrap</a>, <a class="bottomLink" target="_blank" href="https://www.w3schools.com">W3Schools</a>, <a class="bottomLink" target="_blank" href="https://midjourney.com/home/?callbackUrl=%2Fapp%2F">Midjourney</a>, <a class="bottomLink" target="_blank" href="https://jsfiddle.net">JSFiddle</a>.
                     Some other websites I thought were interesting include; the 2D physics engine <a class="bottomLink" target="_blank" href="https://brm.io/matter-js/">Matter.js</a>, the website I based this portfolio from <a class="bottomLink" target="_blank" href="https://karpathy.ai">karpathy.ai</a>, and a text to 3D generator from OpenAI called <a class="bottomLink" target="_blank" href="https://huggingface.co/spaces/openai/point-e">Point-E</a>. I also think <a class="bottomLink" target="_blank" href="bookList.html">books</a> are cool.<br />
                 </p>
 
                 <p style="color: grey;">By accessing this website, you agree to the <a class="bottomLink" target="_blank" href="usePolicy.html">use policy</a>.</p>
+
+                <p style="color: grey;">Local time: <a id="clock"></a></p>
+
             </footer>
 
             <br><br><br><br><br><br>
+
+            <script>var date = new Date();
+                var current_date = date.getFullYear();
+                document.getElementById("p1").innerHTML = current_date;</script>
+
+            <script>setInterval(showTime, 1000);
+                function showTime() {
+                    let time = new Date();
+                    let hour =
+                        time.getHours();
+                    let min =
+                        time.getMinutes();
+                    let sec =
+                        time.getSeconds();
+                    am_pm = "AM";
+
+                    if (hour >= 12) {
+                        if (hour > 12)
+                            hour -= 12;
+                        am_pm = "PM";
+                    } else if (hour == 0) {
+                        hr = 12;
+                        am_pm = "AM";
+                    }
+
+                    hour =
+                        hour < 10
+                            ? "0" + hour
+                            : hour;
+                    min =
+                        min < 10
+                            ? "0" + min
+                            : min;
+                    sec =
+                        sec < 10
+                            ? "0" + sec
+                            : sec;
+
+                    let currentTime =
+                        hour +
+                        ":" +
+                        min +
+                        ":" +
+                        sec +
+                        am_pm;
+
+                    document.getElementById(
+                        "clock"
+                    ).innerHTML =
+                        currentTime;
+                }
+
+                showTime();</script>
 
 
         </div>
@@ -992,7 +1113,14 @@
             });
             /* This line is needed, like the examples above, to prevent it from being open initially */
             $(".color-block8").toggle();
-        </script>
+
+
+            /* For toggling the 'Info' viewer for the HP-maintenance-technican-role */
+            $("#toggle-button9").click(function () {
+                $(".color-block9").toggle('invert');
+            });
+            /* This line is needed, like the examples above, to prevent it from being open initially */
+            $(".color-block9").toggle();</script>
 
 
 
