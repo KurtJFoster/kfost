@@ -78,6 +78,22 @@ dico {
 }
 
 
+/* Pictures for the specific projects within each work experience entry */
+#projectpic {
+    text-align: left;
+}
+
+.projectpicSettings {
+    height: 89px;
+    width: 160px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+    .projectpicSettings:hover {
+        opacity: 75%;
+    }
+
 .logoHover {
     opacity: 100%;
     cursor: pointer;
