@@ -27,7 +27,11 @@
             </div>
             <div id="ddesc">
                 <h1>Kurt J. Foster</h1>
-                <h2>I enjoy building, testing, and repairing electromechanical systems 🛠️</h2>
+                <h2>
+                    I enjoy building, testing, and repairing electromechanical systems 🛠️ <br />
+                    <a class="bottomLink" target="_blank" href="pdfDocs/Kurt_Foster_Resume.pdf" style="font-size: 14px;">Resumé.pdf</a> •
+                    <a class="bottomLink" target="_blank" href="pdfDocs/Kurt_Foster_Resume.pdf" style="font-size: 14px;">CV.pdf</a>
+                </h2>
                 <div id="dico">
                     <table>
                         <tr>
@@ -48,7 +52,6 @@
                     <a class="topLink" href="#experience" style="font-size: 18px;">Experience</a>
                     <a class="topLink" href="#education" style="font-size: 18px;">Education</a><br />
                     <a class="topLink" href="#projects" style="font-size: 18px;">Projects</a>
-                    <a class="topLink" target="_blank" href="pdfDocs/Kurt_Foster_Resume.pdf" style="font-size: 18px;">Resumé.pdf</a>
                 </nav>
             </div>
         </div>
@@ -322,7 +325,7 @@
 
     </div>
 
-    <div style="background-color: #364359; padding-top: 1px; margin-top: 10px; ">
+    <div style="background-color: #333; padding-top: 1px; margin-top: 10px; ">
 
 
         <div id="education" class="container">
@@ -346,146 +349,7 @@
                     <p class="companyName"><i><b>Linn-Benton Community College</b></i></p>
                     <p class="companyName">Grade: 3.94/4.00</p>
                     Learned the fundamentals of manufacturing systems and how to maintain them.<br /><br />
-
-                    <!-- Tab system for choosing between the sections for the education area -->
-                    <div class="tab">
-                        <button class="tablinks" onclick="openCity(event, 'Courses')" id="defaultOpen">Courses</button>
-                        <button class="tablinks" onclick="openCity(event, 'Electives')">Electives</button>
-                        <button class="tablinks" onclick="openCity(event, 'Degree')">Degree</button>
-                    </div>
-
-                    <div id="Courses" class="tabcontent">
-                        <h1 style="font-family: 'Franklin Gothic Medium';">Main Courses</h1>
-
-                        <a class="bottomLink" id="IndustrialSafety" style="font-family: 'Franklin Gothic Medium';">Industrial Safety</a> •
-                        <a class="bottomLink" id="MechanicalSystems" style="font-family: 'Franklin Gothic Medium';">Mechanical Systems</a> •
-                        <a class="bottomLink" id="DriveSystems" style="font-family: 'Franklin Gothic Medium';">Drive Systems</a> •
-                        <a class="bottomLink" id="ElectricalSystemsTroubleshooting" style="font-family: 'Franklin Gothic Medium';">Electrical Systems Troubleshooting</a> •
-                        <a class="bottomLink" id="CADforFactoryAutomation" style="font-family: 'Franklin Gothic Medium';">CAD for Factory Automation</a> •
-                        <a class="bottomLink" id="Bearings&LubeSystems" style="font-family: 'Franklin Gothic Medium';">Bearings & Lube Systems</a> •
-                        <a class="bottomLink" id="TroubleshootingMotors&Controls" style="font-family: 'Franklin Gothic Medium';">Troubleshooting Motors & Controls</a> •
-                        <a class="bottomLink" id="IndustrialPneumaticsSystems" style="font-family: 'Franklin Gothic Medium';">Industrial Pneumatics Systems</a> •
-                        <a class="bottomLink" id="Predictive&PreventiveMaintenance" style="font-family: 'Franklin Gothic Medium';">Predictive & Preventive Maintenance</a> •
-                        <a class="bottomLink" id="ProgrammableLogicControllers" style="font-family: 'Franklin Gothic Medium';">Programmable Logic Controllers</a> •
-                        <a class="bottomLink" id="PrinciplesofTechnology" style="font-family: 'Franklin Gothic Medium';">Principles of Technology</a> •
-                        <a class="bottomLink" id="IndustrialHydraulicsSystems" style="font-family: 'Franklin Gothic Medium';">Industrial Hydraulics Systems</a> •
-                        <a class="bottomLink" id="LifetimeHealth&Fitness" style="font-family: 'Franklin Gothic Medium';">Lifetime Health & Fitness</a> •
-                        <a class="bottomLink" id="IndustrialSensors&Actuators" style="font-family: 'Franklin Gothic Medium';">Industrial Sensors & Actuators</a> •
-                        <a class="bottomLink" id="AdvancedPLCTroubleshooting" style="font-family: 'Franklin Gothic Medium';">Advanced PLC Troubleshooting</a> •
-                        <a class="bottomLink" id="PrinciplesofTechnologyII" style="font-family: 'Franklin Gothic Medium';">Principles of Technology II</a> •
-                        <a class="bottomLink" id="CapstoneProjectI" style="font-family: 'Franklin Gothic Medium';">Capstone Project I</a> •
-                        <a class="bottomLink" id="TechnicalWritingforCTE" style="font-family: 'Franklin Gothic Medium';">Technical Writing for CTE</a> •
-                        <a class="bottomLink" id="AutomatedMaterialHandling" style="font-family: 'Franklin Gothic Medium';">Automated Material Handling</a> •
-                        <a class="bottomLink" id="PumpsandValves" style="font-family: 'Franklin Gothic Medium';">Pumps and Valves</a> •
-                        <a class="bottomLink" id="CapstoneProjectII" style="font-family: 'Franklin Gothic Medium';">Capstone Project II</a> •
-                        <a class="bottomLink" id="ServiceSkillsforTechnicians" style="font-family: 'Franklin Gothic Medium';">Service Skills for Technicians</a> •
-                        <a class="bottomLink" id="ProcessControl&Instrumentation" style="font-family: 'Franklin Gothic Medium';">Process Control & Instrumentation</a> •
-                        <a class="bottomLink" id="Energy&Sustainability" style="font-family: 'Franklin Gothic Medium';">Energy & Sustainability</a> •
-                        <a class="bottomLink" id="CapstoneProject&Assessment" style="font-family: 'Franklin Gothic Medium';">Capstone Project & Assessment</a>
-
-                        <br /><br />
-
-                        <p id="textUnderneath" style="font-family: 'Franklin Gothic Medium';"></p>
-
-                        <script>document.getElementById("IndustrialSafety").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Industrial Safety</h1><br /><h3><u>Credit Hours</u>: 2 • <u>Course Length</u>: 12 Weeks</h3>Focuses on how to protect oneself and fellow workers from workplace accidents. Covers topics such as electrical safety, personal protective equipment, fall protection, confined space entry, hazardous materials, fires, and Lockout/Tag out. Emphasizes personal responsibility for one's own safety. Includes the development of a personalized safety manual.";
-                            });
-                            document.getElementById("MechanicalSystems").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Mechanical Systems</h1><br /><h3><u>Credit Hours</u>: 4 • <u>Course Length</u>: 12 Weeks</h3>This lab-based course introduces students to fundamental mechanical skills, concepts and practices. Intended for mechatronics technicians, the course includes but is not limited to: precision measurement, technical shop math, mechanical fasteners, hand and power tools, and fundamentals of rigging and lifting. Safe application of industrial skills in the workplace is emphasized. This course contains a portion of the embedded computation requirement for Related Instruction.";
-                            });
-                            document.getElementById("DriveSystems").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Drive Systems</h1><br /><h3><u>Credit Hours</u>: 2 • <u>Course Length</u>: 12 Weeks</h3>Explores the troubleshooting and maintenance of drive systems. Covers fundamentals of vibration analysis and system alignment in the lab component. Places emphasis on effective installation, removal, and maintenance of belt, chain and gear drives to maximize component lifecycle and energy efficiency.";
-                            });
-                            document.getElementById("ElectricalSystemsTroubleshooting").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Electrical Systems Troubleshooting</h1><br /><h3><u>Credit Hours</u>: 4 • <u>Course Length</u>: 12 Weeks</h3>Uses electrical troubleshooting theory in troubleshooting common electrical problems: low voltage, high voltage, unwanted resistance, open circuits, high resistance shorts to ground, and current and voltage unbalance. Covers efficiency technology and sustainable practices.";
-                            });
-                            document.getElementById("CADforFactoryAutomation").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>CAD for Factory Automation</h1><br /><h3><u>Credit Hours</u>: 4 • <u>Course Length</u>: 12 Weeks</h3>Introduces the application and functions of computer aided drafting (CAD). Emphasizes the use of AutoCAD software for simple mechanical part drawings, expanding into process flow diagrams and electrical diagrams.";
-                            });
-                            document.getElementById("Bearings&LubeSystems").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Bearings & Lube Systems</h1><br /><h3><u>Credit Hours</u>: 2 • <u>Course Length</u>: 12 Weeks</h3>Explores the troubleshooting and maintenance of bearings and lubrication systems. Includes training in fundamentals of vibration and oil analysis, handling and mounting bearings, and operating lubrication systems. Emphasizes energy efficiency.";
-                            });
-                            document.getElementById("TroubleshootingMotors&Controls").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Troubleshooting Motors & Controls</h1><br /><h3><u>Credit Hours</u>: 4 • <u>Course Length</u>: 12 Weeks</h3>Explores troubleshooting and maintaining motor controls, as well as single- and three-phase motors. Stresses the analysis of motor control schematics, the use of advanced digital multimeters, and motor efficiency. Introduces ladder logic as a means of understanding motor controls, leading toward the operation of programmable logic controllers (PLCs) and automated control systems. Embeds effective troubleshooting methodologies.";
-                            });
-                            document.getElementById("IndustrialPneumaticsSystems").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Industrial Pneumatics Systems</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Learn to analyze fundamental pneumatic schematics, how to troubleshoot common pneumatic problems, how to maintain and repair pneumatic systems used in a variety of production applications, and how to promote energy efficiency in pneumatic systems. Understanding pneumatic circuits is critical to working with all types of industrial control systems.";
-                            });
-                            document.getElementById("Predictive&PreventiveMaintenance").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Predictive & Preventive Maintenance</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Covers how to manage the computerized maintenance management (CMM) systems used in most modern plants and facilities. Stresses the use of CMM systems as a troubleshooting tool and as a method for improving energy efficiency. Uses boiler operation and maintenance as the case study.";
-                            });
-                            document.getElementById("ProgrammableLogicControllers").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Programmable Logic Controllers</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Provides a hands-on introduction to programmable logic controllers (PLCs), and industrial computers used to control electrical and mechanical systems, with emphasis placed on effective selection, installation, and troubleshooting of PLC systems. Introduces PLC ladder logic programming and covers field troubleshooting of input and output devices.";
-                            });
-                            document.getElementById("PrinciplesofTechnology").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Principles of Technology</h1><br /><h3><u>Credit Hours</u>: 5 • <u>Course Length</u>: 12 Weeks</h3>Focuses on applying physical concepts and formulae to technology found in the industrial workplace. Students will develop and strengthen critical thinking and problem solving skills required to function and excel inrapidly changing and increasingly complex workplace environments. Lab experiments are intended to reinforce and enhance the scientific principles discussed in class as well as providing an opportunity to learn to work effectively in groups. The impact of technology on energy efficiency in the workplace is studied. This course contains a portion of the embedded computation requirement for Related Instruction.";
-                            });
-                            document.getElementById("IndustrialHydraulicsSystems").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Industrial Hydraulics Systems</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Explores how to analyze fundamental hydraulic schematics, troubleshoot common hydraulic problems, maintain and repair hydraulic systems, and promote energy efficiency in a variety of production applications. Includes constructing, analyzing, and troubleshooting common hydraulic circuits.";
-                            });
-                            document.getElementById("LifetimeHealth&Fitness").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Lifetime Health & Fitness</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Evaluates selected areas of the student's present health and fitness level. Provides information on each of the wellness dimensions as they relate to physical fitness, back care, chronic disease, stress management, nutrition, weight management, behavioral change, and lifestyle choices. Considers work-life balance and self-responsibility. Shows the student how to enter the work site as a fit and healthy individual and suggests ways to maintain that level of health.";
-                            });
-                            document.getElementById("IndustrialSensors&Actuators").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Industrial Sensors & Actuators</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Gives students a working knowledge of a variety of industrial sensors and actuators and their operation in control systems. Students will learn how different types of sensors operate and how to select the appropriate sensors. Students will learn to install, maintain and troubleshoot different types of sensors and actuators. Students will construct electrical circuits that illustrate the function of various types of sensors.";
-                            });
-                            document.getElementById("AdvancedPLCTroubleshooting").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Advanced PLC Troubleshooting</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Develops advanced skills in programming programmable logic controllers (PLCs). Covers converting common industrial control circuits to PLC ladder logic as well as creating programs from narrative descriptions. Places special emphasis on interfacing the PLC with a selection of electro-pneumatic control devices. Also covers interpreting PLC data sheets and the systemic approach to testing and troubleshooting of PLC programs.";
-                            });
-                            document.getElementById("PrinciplesofTechnologyII").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Principles of Technology II</h1><br /><h3><u>Credit Hours</u>: 5 • <u>Course Length</u>: 12 Weeks</h3>Focuses on applying physical concepts and formulae to technology found in the industrial workplace. Students will develop and strengthen critical thinking and problem solving skills required to function and excel in rapidly changing and increasingly complex workplace environments. Lab experiments are intended to reinforce and enhance the scientific principles discussed in class as well as providing an opportunity to learn to work effectively in groups. The impact of technology on energy efficiency in the workplace is studied. This course contains a portion of the embedded computation requirement for Related Instruction.";
-                            });
-                            document.getElementById("CapstoneProjectI").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Capstone Project I</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Begins the journey of creating an automated mechatronics project. Incorporates ideas from various aspects of mechatronics (fluid power, mechanical systems, electrical sensors and controls, etc.). Includes working as a group to plan and design a project, troubleshoot system faults, and optimize operation. Requires substantial research activity and lab time.";
-                            });
-                            document.getElementById("TechnicalWritingforCTE").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Technical Writing for CTE</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Covers processes and fundamentals of writing field-specific technical documents, including structure, organization and development, audience analysis, diction and style, revision, editing, mechanics and standard usage, and writing process required for successful workplace writing. This course focuses on writing work place documents commonly written by technicians: emails, descriptions, customer intake documents, documentation of work completed, bad news messages, instructions, summaries, accident reports, resumes, cover letters, troubleshooting procedures, proposals, request for quotes, etc.";
-                            });
-                            document.getElementById("AutomatedMaterialHandling").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Automated Material Handling</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>An introduction to automation and production-line technologies. Students will develop a working production line that includes sensor technology, electro-pneumatics, motor control technology, and programmed control. Maintenance, troubleshooting, and repair of manufacturing systems is emphasized as is energy efficiency.";
-                            });
-                            document.getElementById("PumpsandValves").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Pumps and Valves</h1><br /><h3><u>Credit Hours</u>: 2 • <u>Course Length</u>: 12 Weeks</h3>Examines troubleshooting, maintaining, and repairing valves and industrial pumps. Covers the various types of positive-displacement pumps and centrifugal pumps, considering which is best for any specific application. Reviews many different types of valves and introduces the characteristics of each.";
-                            });
-                            document.getElementById("CapstoneProjectII").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Capstone Project II</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Students continue the fabrication of their automated mechatronics project. Includes work on design, troubleshooting system faults, and optimizing system operation. Requires substantial research activity and lab time.";
-                            });
-                            document.getElementById("ServiceSkillsforTechnicians").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Service Skills for Technicians</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Emphasizes the importance of communicating effectively with people from various social and cultural backgrounds. Focuses on the work place and employability. Incorporates effective troubleshooting and project management methods that involve leadership and people skills. Includes interview and job search techniques for obtaining employment in the students chosen industry.";
-                            });
-                            document.getElementById("ProcessControl&Instrumentation").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Process Control & Instrumentation</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Provides an introduction to process control and instrumentation. Students will develop a working production line that includes sensors, pneumatics, PLCs and motor controls. Energy efficiency and maintenance, troubleshooting, and repair of control systems is emphasized.";
-                            });
-                            document.getElementById("Energy&Sustainability").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Energy & Sustainability</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Explores fundamental concepts and skills related to energy efficiency and sustainability in industrial plants and commercial office buildings. Includes discussion of alternative energy sources such as wind, solar, biomass, hydro, geothermal, and small-scale nuclear. Creates an opportunity to conduct a Level 1 energy audit using testing tools like infrared (IR) thermographic cameras and light meters. Analyzes the interaction of the laws of thermodynamics, the environment, business economics, and production operations.";
-                            });
-                            document.getElementById("CapstoneProject&Assessment").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Capstone Project & Assessment</h1><br /><h3><u>Credit Hours</u>: 3 • <u>Course Length</u>: 12 Weeks</h3>Students complete the fabrication of their automated project using skills learned in previous mechatronics coursework. Incorporates documenting all aspects of the project, troubleshooting system faults, and devising a plan for optimizing system operation. Requires substantial research activity and lab time. Includes a third-party mechatronics assessment to determine understanding of key mechatronics concepts.";
-                            });</script>
-                    </div>
-
-
-                    <div id="Electives" class="tabcontent">
-                        <h1 style="font-family: 'Franklin Gothic Medium';">Elective Courses</h1>
-
-                        <a class="bottomLink2" id="IndustrialSafety" style="font-family: 'Franklin Gothic Medium';">This Tab Is Under Construction</a> •
-                        <a class="bottomLink2" id="MechanicalSystems" style="font-family: 'Franklin Gothic Medium';">Course Title 2</a> •
-
-                        <script>document.getElementById("IndustrialSafety").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Industrial Safety</h1><br /><h3><u>Credit Hours</u>: 2 • <u>Course Length</u>: 12 Weeks</h3>Focuses on how to protect oneself and fellow workers from workplace accidents. Covers topics such as electrical safety, personal protective equipment, fall protection, confined space entry, hazardous materials, fires, and Lockout/Tag out. Emphasizes personal responsibility for one's own safety. Includes the development of a personalized safety manual.";
-                            });
-                            document.getElementById("MechanicalSystems").addEventListener("click", function () {
-                                document.getElementById("textUnderneath").innerHTML = "<h1>Mechanical Systems</h1><br /><h3><u>Credit Hours</u>: 4 • <u>Course Length</u>: 12 Weeks</h3>This lab-based course introduces students to fundamental mechanical skills, concepts and practices. Intended for mechatronics technicians, the course includes but is not limited to: precision measurement, technical shop math, mechanical fasteners, hand and power tools, and fundamentals of rigging and lifting. Safe application of industrial skills in the workplace is emphasized. This course contains a portion of the embedded computation requirement for Related Instruction.";
-                            });</script>
-                    </div>
-
-                    <div id="Degree" class="tabcontent">
-                        <img target="_blank" style="max-width: 350px; max-height: 350px;" src="images/diploma.jpg" alt="Linn-Benton Community College 2-year, Associate of Applied Science, Degree Screenshot">
-                    </div>
-
-
                     <br />
-
 
                 </div>
             </div>

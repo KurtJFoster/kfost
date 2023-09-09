@@ -309,7 +309,7 @@ hr {
 .ico {
     grid-column: span 1;
     vertical-align: top;
-    border-left: 2px solid #cfcfcf;
+    border-left: 2px solid #333;
     position: relative;
 }
 
@@ -397,7 +397,7 @@ hr {
     width: 10px;
     height: 10px;
     border-radius: 7px;
-    background-color: #cfcfcf;
+    background-color: #333;
     border: 2px solid #333;
 }
 
@@ -406,7 +406,7 @@ hr {
     font-size: 14px;
     text-align: center;
     padding-right: 5px;
-    color: #bbb;
+    color: #333;
 }
 
 .hassets {
