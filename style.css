@@ -314,10 +314,10 @@ hr {
 }
 
     .ico img {
-        border-radius: 5px;
+        border-radius: 10px;
         width: 100%;
-        max-width: 80px;
-        margin-left: 10px;
+        max-width: 70px;
+        margin-left: 20px;
     }
 
 .desc {

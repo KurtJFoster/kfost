@@ -19,18 +19,19 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<body>
+<body onload = "typeWriter()" >
+    <br />
     <div id="dhead" class="container">
         <div class="row">
             <div id="dpic">
                 <img src="images/profileSanDiegoPic.jpeg" class="ppic" />
             </div>
             <div id="ddesc">
+                <br />
                 <h1>Kurt J. Foster</h1>
                 <h2>
-                    I enjoy building, testing, and repairing electromechanical systems 🛠️ <br />
-                    <a class="bottomLink" target="_blank" href="pdfDocs/Kurt_Foster_Resume.pdf" style="font-size: 14px;">Resumé.pdf</a> •
-                    <a class="bottomLink" target="_blank" href="pdfDocs/Kurt_Foster_Resume.pdf" style="font-size: 14px;">CV.pdf</a>
+                    <a id="demo"></a><br />
+                    <a class="bottomLink" target="_blank" href="pdfDocs/KurtJFoster.pdf" style="font-size: 14px;">Resumé.pdf</a>  <img src="images/openNewTab.png" />
                 </h2>
                 <div id="dico">
                     <table>
@@ -47,25 +48,18 @@
                         </tr>
                     </table>
                 </div>
-                <nav>
-                    <!-- Heading links -->
-                    <a class="topLink" href="#experience" style="font-size: 18px;">Experience</a>
-                    <a class="topLink" href="#education" style="font-size: 18px;">Education</a><br />
-                    <a class="topLink" href="#projects" style="font-size: 18px;">Projects</a>
-                </nav>
             </div>
         </div>
-        <!-- Horizonal faded bar -->
+        <br />
+
         <hr />
+
     </div>
 
-    </br>
 
     <!-- <center><i><h3 style="color: grey">Currently Part-time Engineering Student, </br> Automation Technician, and Mineral Shop Co-Owner. </br> <a class="bottomLink" target="_blank" href="pdfDocs/Kurt_Foster_Resume.pdf">Resume in PDF</a></h3></i></center>  -->
 
     <div id="experience" class="container">
-        <br /><br />
-        <h1 class="large-thin-text">Experience</h1>
         <br /><br />
     </div>
 
@@ -104,18 +98,21 @@
                     </table>
                 </div>
                 <!-- Detailed description -->
-                Troubleshooting and repairing industrial automated systems.<br /><br />
+                Repairing industrial automated systems.<br /><br />
                 <!-- Info section that comes up when the INFO logo picture is clicked -->
                 <div class="color-block9">
                     <div class="infoBlock">
                         <!-- WE NEED TO BUILD A NEW CLASS MAYBE? TRY REGULAR TEXT HERE FIRST -->
-                        Repairing and maintaining a wide variety of industrial machinery.<br /><br />
-                        • Troubleshooting, repairing, and diagnosing issues with four 1.5-ton payload capacity ASRS robots<br />
-                        • Creating and viewing PLC programs and command language programs to control the equipment<br />
-                        • Ensure instruments are calibrated and verified on a regular basis<br />
-                        • Participate in the development of maintenance and operational documentation of equipment<br />
-                        • Evaluate spare parts needs and use available systems to warehouse and track inventory/availability<br />
-                        • Reads/interprets mechanical drawings, schematics, printouts, specifications, and test procedures<br /><br />
+                        • Editing and troubleshooting PLC ladder logic and command language programs<br />
+                        • Determining root cause analysis of circuitry, control panels, and mechanical systems<br />
+                        • Following through with timely repairs, updates, and documentation of issues resolved<br />
+                        • First responding troubleshooter diagnosing a wide variety of electromechanical issues<br />
+                        • Participating in the development of maintenance and operational documentation of equipment<br />
+                        • Evaluating spare part needs and use available systems to warehouse and track inventory/availability<br />
+                        • Interpreting mechanical drawings, schematics, printouts, specifications, and test procedures<br />
+                        • Ensuring measuring/diagnosing instruments are calibrated and verified on a regular basis<br />
+                        • Working with my fellow Technicians and Engineers on resolving issues by communicating effectively and ultimately managing our tasks for efficent completion<br /><br />
+
                     </div>
                 </div>
             </div>
@@ -160,6 +157,8 @@
                 <div class="color-block4">
                     <div class="infoBlock">
                         <!-- WE NEED TO BUILD A NEW CLASS MAYBE? TRY REGULAR TEXT HERE FIRST -->
+                        Utilized my automation experience to design, build, and test a UL-compliant consumer appliance that combined the potential of microcontrollers and industrial automation technology into a greenhouse product that could ideally sustain a hydroponics farming operation for years, if not decades, without major repairs required.<br /><br />
+
                         Responsibilities:<br /><br />
                         • Testing components at an individual level, keeping track of performance measured<br />
                         • Translating custom CAD to real world results, and constant iteration through the issues<br />
@@ -176,16 +175,24 @@
                         • Used continuous improvement for design to lower cost, increase quality of automated devices<br />
                         • Programmed and wired PLC and microcontroller devices for real-time process control<br />
                         • Used a variety of hand tools: WAGO Variocrimp, self-adjusting wire stripper, heat-guns, tap & die sets, metal jig saws, and other common shop tools<br />
-                        • Electrical wiring involving 12VDC to 120VAC for powering pumps, valves, and associated electrical equipment, all organized to be functional, safe & user friendly<br /><br />
+                        • Electrical wiring involving 3.3VDC to 120VAC for powering pumps, valves, and associated electrical equipment, all organized to be functional, safe & user friendly<br /><br />
+
+
 
                         Open-sourced Showcase:<br /><br />
 
                     </div>
                     <div id="projectpic">
 
-                        <img src="images/hydroponic3Dimage.jpeg" class="projectpicSettings" />
-                        <img src="images/controlPanel3Dimage.jpeg" class="projectpicSettings" />
-                        <img src="images/electricalSchematic3Dimage.jpeg" class="projectpicSettings" />
+                        <a href="https://cad.onshape.com/documents/14566fd902a0be0d8c1e67b7/w/0ff7ca55352d42e768777c6e/e/b31f96b639cae0abea585bb0" target="_blank">
+                            <img src="images/hydroponic3Dimage.jpeg" class="projectpicSettings" />
+                        </a>
+                        <a href="pdfDocs/PR01-Mechanical.pdf" target="blank">
+                            <img src="images/controlPanel3Dimage.jpeg" class="projectpicSettings" />
+                        </a>
+                        <a href="pdfDocs/PR01-Electrical.pdf" target="blank">
+                            <img src="images/electricalSchematic3Dimage.jpeg" class="projectpicSettings" />
+                        </a>
 
                     </div>
                 </div>
@@ -226,7 +233,7 @@
                     </table>
                 </div>
                 <!-- Detailed description -->
-                Responsible for Powertrain Manufacturing equipment repair.<br /><br />
+                Powertrain Manufacturing equipment repair.<br /><br />
                 <!-- Info section that comes up when the INFO logo picture is clicked -->
                 <div class="color-block5">
                     <div class="infoBlock">
@@ -255,7 +262,7 @@
                             ➥ <i>Equipment Maintenance Technician I</i><br /><br />
 
                             • Diagnosed equipment failures and suggested improvements to process engineering<br />
-                            • Prevented 500+ drive units from fallout (est. $1mm+ savings according to Sr. Process Engineer)<br />
+                            • Prevented 500+ drive units from fallout (est. $3.6mm+ savings according to Sr. Process Engineer)<br />
                             • Repaired automated machinery, requiring full knowledge of the functional operation<br />
                             • Mentored production associates on equipment updates and safe throughput<br />
                             • Replaced required mechanical and electrical components of production equipment<br />
@@ -273,6 +280,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="entry row">
+            <div class="timespan">
+                Graduated 2018
+            </div>
+            <div class="ico">
+                <div class="entry-dot"></div>
+                <a href="https://www.linnbenton.edu/educational-options/applied-industrial-tech-and-transportation/mechatronics/index.php" target="_blank"><img src="images/linnbentonLogo.png" class="logoHover" /></a>
+            </div>
+            <div class="desc">
+                <h3>Linn-Benton Community College<br /><a style="color: #adadad; font-size: 18px;">AAS, Industrial Automation Technology </a></h3>
+                <p class="companyName"><b>Graduated June 2018</b></p>
             </div>
         </div>
 
@@ -308,16 +329,16 @@
                     </table>
                 </div>
                 <!-- Detailed description -->
-                Custom-built and fabricated manufacturing equipment.<br /><br />
+                Built custom manufacturing equipment.<br /><br />
                 <!-- Info section that comes up when the INFO logo picture is clicked -->
                 <div class="color-block8">
                     <div class="infoBlock">
-                        <!-- WE NEED TO BUILD A NEW CLASS MAYBE? TRY REGULAR TEXT HERE FIRST -->
-                        • Kept high-level attention to detail when fabricating/assembling complex robotic machinery<br />
-                        • Drilled, tapped, fastened components for industrial electrical panels and pneumatic panels<br />
-                        • Wired control panels using electrical diagrams, red-lined issues and reported to engineering<br />
-                        • Stripped, crimped, assembled, MIL-Spec multi-pin connectors (up to 56-pin)<br />
-                        • Followed work procedures associated with procurement for timely machine assembly<br />
+                    <!-- WE NEED TO BUILD A NEW CLASS MAYBE? TRY REGULAR TEXT HERE FIRST -->
+                    • Kept high-level attention to detail when fabricating/assembling complex robotic machinery<br />
+                    • Drilled, tapped, fastened components for industrial electrical panels and pneumatic panels<br />
+                    • Wired control panels using electrical diagrams, red-lined issues and reported to engineering<br />
+                    • Stripped, crimped, assembled, MIL-Spec multi-pin connectors (up to 56-pin)<br />
+                    • Followed work procedures associated with procurement for timely machine assembly<br />
                     </div>
                 </div>
             </div>
@@ -325,347 +346,409 @@
 
     </div>
 
-    <div style="background-color: #333; padding-top: 1px; margin-top: 10px; ">
+    <div style="background-color: #333; padding-top: 1px; margin-top: 0px; ">
 
 
-        <div id="education" class="container">
-            <br /><br />
-            <h1 class="large-thin-text">Education</h1>
-            <br /><br />
+
+
+
+    </div>
+
+
+    <div style="background-color: #333; padding-top: 1px; margin-top: 0px; ">
+
+        <div id="projects" class="container">
         </div>
+
         <div id="history" class="container">
+
+            <!-- Bearing Supply, Sorting, and Placement Machine Section -->
+            <div class="entry row">
+                <!-- Date on Timeline -->
+                <div class="timespan">
+                    Spring 2018
+                </div>
+                <div class="ico">
+                    <div class="entry-dot"></div>
+                    <!-- When project image clicked, opens new tab with that image -->
+                    <a href="images/bearingPic2.png" target="_blank" class="logoHover" />
+                    <img src="images/bearingPic2.png" alt="Bearing Project Image">
+                    </a>
+                </div>
+                <div class="desc">
+                    <!-- Title Section -->
+                    <h3>Bearing Supply, Sorting, and Placement Machine</h3>
+                    <!-- Title Sub-section -->
+                    <p class="companyName">Linn-Benton Community College · Part-time</p>
+                    <div id="locationInfoPlusPDFlogo">
+                        <table>
+                            <tr>
+                                <th>
+                                    <h2>Mar 2018 - June 2018 · 3 mos <br /> Albany, Oregon, United States</h2>
+                                </th>
+                                <th>
+                                    <!-- PDF toggle image button -->
+                                    <a id="toggle-button0"><img src="images/pdfLogo.png" class="pdfLogoSettings" /></a>
+                                </th>
+                                <th>
+                                    <h2>Icon opens file<br />viewport below.</h2>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Detailed description -->
+                    <!-- PDF File that comes up when the pdfLogo picture is clicked -->
+                    <div class="color-block0">
+                        <div>
+                            Operation of the machine is for rejecting short-width bearings and accepting a tall-width bearings. The tall bearing would then be picked up and placed into a bearing housing on a conveyor line. The system uses five electrically actuated directional control valves to power five pneumatic cylinders and requires twelve sensors for operation.<br /><br />
+
+                            If the viewport doesn't load correctly, <a class="bottomLink" target="_blank" href="pdfDocs/Bearing Supply, Sorting, & Placement Automated System.pdf">Click Here</a> to open PDF externally.
+                        </div>
+                        <br />
+                        <div class="pdfBlock">
+                            <iframe class="pdf-reader" src="pdfDocs/Bearing Supply, Sorting, & Placement Automated System.pdf" width="550" height="550"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Automated Parts Transfer System Section -->
+            <div class="entry row">
+                <div class="timespan">
+                    Fall 2017
+                </div>
+                <div class="ico">
+                    <div class="entry-dot"></div>
+                    <!-- When project image clicked, opens new tab with that image -->
+                    <a href="images/waferStation2.png" target="_blank" class="logoHover" />
+                    <img src="images/waferStation2.png" alt="Wafer Handling Project Image">
+                    </a>
+                </div>
+                <div class="desc">
+                    <!-- Title Section -->
+                    <h3>Automated Parts Transfer System</h3>
+                    <!-- Title Sub-section -->
+                    <p class="companyName">Linn-Benton Community College · Part-time</p>
+                    <div id="locationInfoPlusPDFlogo">
+                        <table>
+                            <tr>
+                                <th>
+                                    <h2>Sep 2017 - Dec 2017 · 4 mos <br /> Albany, Oregon, United States</h2>
+                                </th>
+                                <th>
+                                    <!-- PDF toggle image button -->
+                                    <a id="toggle-button1"><img src="images/pdfLogo.png" class="pdfLogoSettings" /></a>
+                                </th>
+                                <th>
+                                    <h2>Icon opens file<br />viewport below.</h2>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Detailed description -->
+                    <!-- PDF File that comes up when the pdfLogo picture is clicked -->
+                    <div class="color-block1">
+                        <div>
+                            During my second year as a Mechatronics student at Linn Benton Community College, I developed and assembled a prototype version of an automated process that involved communication between two Arduino's and a Programmable Logic Controller. Utilized two dual-axis (rotational and linear acting) wafer handling machines which were used as robot arms. The concept image is a possible route for where this project could take the next steps.<br /><br />
+
+                            If the viewport doesn't load correctly, <a class="bottomLink" target="_blank" href="pdfDocs/Automated Parts Transfer System.pdf">Click Here</a> to open PDF externally.
+                        </div>
+                        <br />
+                        <div class="pdfBlock">
+                            <iframe class="pdf-reader" src="pdfDocs/Automated Parts Transfer System.pdf" width="550" height="550"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="entry row">
                 <div class="timespan">
-                    2016 - 2018
+                    Graduated 2017
                 </div>
                 <div class="ico">
                     <div class="entry-dot"></div>
-                    <a href="https://www.linnbenton.edu/educational-options/applied-industrial-tech-and-transportation/mechatronics/index.php" target="_blank"><img src="images/linnbentonLogo.png" class="logoHover" /></a>
+                    <a href="https://www.philomathsd.net/philomath-hs-home/academics/graduation-requirements" target="_blank"><img src="images/academyPhilomath.png" class="logoHover" /></a>
                 </div>
                 <div class="desc">
-                    <h3><i style="color: #adadad; ">Associate of Applied Science, </i><br /> Industrial Automation Technology <br /></h3>
-                    <p class="companyName"><i><b>Linn-Benton Community College</b></i></p>
-                    <p class="companyName">Grade: 3.94/4.00</p>
-                    Learned the fundamentals of manufacturing systems and how to maintain them.<br /><br />
-                    <br />
+                    <h3>Philomath High School<br /><i style="color: #adadad; font-size: 18px;">Standard Diploma</i></h3>
+                    <p class="companyName"><b>Graduated June 2017</b></p><br />
 
                 </div>
             </div>
 
-        </div>
 
+            <!-- Aluminum Mountain Bike Frame Section -->
+            <div class="entry row">
+                <div class="timespan">
+                    Summer 2016
+                </div>
+                <div class="ico">
+                    <div class="entry-dot"></div>
+                    <!-- When project image clicked, opens new tab with that image -->
+                    <a href="images/bikeFrame3.png" target="_blank" class="logoHover" />
+                    <img src="images/bikeFrame3.png" alt="Bike Frame Project Image">
+                    </a>
+                </div>
+                <div class="desc">
+                    <!-- Title Section -->
+                    <h3>Aluminum Mountain Bike Frame</h3>
+                    <!-- Title Sub-section -->
+                    <p class="companyName">High School Senior Project · Part-time</p>
+                    <div id="locationInfoPlusPDFlogo">
+                        <table>
+                            <tr>
+                                <th>
+                                    <h2>Jun 2016 - Sep 2016 · 4 mos <br /> Corvallis, Oregon, United States</h2>
+                                </th>
+                                <th>
+                                    <!-- PDF toggle image button -->
+                                    <a id="toggle-button2"><img src="images/pdfLogo.png" class="pdfLogoSettings" /></a>
+                                </th>
+                                <th>
+                                    <h2>Icon opens file<br />viewport below.</h2>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Detailed description -->
+                    <!-- PDF File that comes up when the pdfLogo picture is clicked -->
+                    <div class="color-block2">
+                        <div>
+                            I designed, built and tested a fully functional 6061 Aluminum Mountain Bicycle Frame. Some of the challenges included: learning to TIG weld aluminum, reverse engineering of bicycle frame components, project scope and aesthetics.<br /><br />
 
-        <div style="background-color: #333; padding-top: 1px; margin-top: 10px; ">
-
-            <div id="projects" class="container">
-                <br /><br />
-                <h1 class="large-thin-text">Projects</h1>
-                <br /><br />
+                            If the viewport doesn't load correctly, <a class="bottomLink" target="_blank" href="pdfDocs/Aluminum Mountain Bike Frame.pdf">Click Here</a> to open PDF externally.
+                        </div>
+                        <br />
+                        <div class="pdfBlock">
+                            <iframe class="pdf-reader" src="pdfDocs/Aluminum Mountain Bike Frame.pdf" width="550" height="550"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div id="history" class="container">
 
-                <!-- Bearing Supply, Sorting, and Placement Machine Section -->
-                <div class="entry row">
-                    <!-- Date on Timeline -->
-                    <div class="timespan">
-                        Spring 2018
-                    </div>
-                    <div class="ico">
-                        <div class="entry-dot"></div>
-                        <!-- When project image clicked, opens new tab with that image -->
-                        <a href="images/bearingPic2.png" target="_blank" class="logoHover" />
-                        <img src="images/bearingPic2.png" alt="Bearing Project Image">
-                        </a>
-                    </div>
-                    <div class="desc">
-                        <!-- Title Section -->
-                        <h3>Bearing Supply, Sorting, and Placement Machine</h3>
-                        <!-- Title Sub-section -->
-                        <p class="companyName">Linn-Benton Community College · Part-time</p>
-                        <div id="locationInfoPlusPDFlogo">
-                            <table>
-                                <tr>
-                                    <th>
-                                        <h2>Mar 2018 - June 2018 · 3 mos <br /> Albany, Oregon, United States</h2>
-                                    </th>
-                                    <th>
-                                        <!-- PDF toggle image button -->
-                                        <a id="toggle-button0"><img src="images/pdfLogo.png" class="pdfLogoSettings" /></a>
-                                    </th>
-                                    <th>
-                                        <h2>Icon opens file<br />viewport below.</h2>
-                                    </th>
-                                </tr>
-                            </table>
-                        </div>
-                        <!-- Detailed description -->
-                        Operation of the machine is for rejecting short-width bearings and accepting a tall-width bearings. The tall bearing would then be picked up and placed into a bearing housing on a conveyor line. The system uses five electrically actuated directional control valves to power five pneumatic cylinders and requires twelve sensors for operation.<br /><br />
-                        <!-- PDF File that comes up when the pdfLogo picture is clicked -->
-                        <div class="color-block0">
-                            <div>If the viewport doesn't load correctly, <a class="bottomLink" target="_blank" href="pdfDocs/Bearing Supply, Sorting, & Placement Automated System.pdf">Click Here</a> to open PDF externally.</div>
-                            <br />
-                            <div class="pdfBlock">
-                                <iframe class="pdf-reader" src="pdfDocs/Bearing Supply, Sorting, & Placement Automated System.pdf" width="550" height="550"></iframe>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Telescope Building Section -->
+            <div class="entry row">
+                <div class="timespan">
+                    2014 - 2016
                 </div>
-
-                <!-- Automated Parts Transfer System Section -->
-                <div class="entry row">
-                    <div class="timespan">
-                        Fall 2017
-                    </div>
-                    <div class="ico">
-                        <div class="entry-dot"></div>
-                        <!-- When project image clicked, opens new tab with that image -->
-                        <a href="images/waferStation2.png" target="_blank" class="logoHover" />
-                        <img src="images/waferStation2.png" alt="Wafer Handling Project Image">
-                        </a>
-                    </div>
-                    <div class="desc">
-                        <!-- Title Section -->
-                        <h3>Automated Parts Transfer System</h3>
-                        <!-- Title Sub-section -->
-                        <p class="companyName">Linn-Benton Community College · Part-time</p>
-                        <div id="locationInfoPlusPDFlogo">
-                            <table>
-                                <tr>
-                                    <th>
-                                        <h2>Sep 2017 - Dec 2017 · 4 mos <br /> Albany, Oregon, United States</h2>
-                                    </th>
-                                    <th>
-                                        <!-- PDF toggle image button -->
-                                        <a id="toggle-button1"><img src="images/pdfLogo.png" class="pdfLogoSettings" /></a>
-                                    </th>
-                                    <th>
-                                        <h2>Icon opens file<br />viewport below.</h2>
-                                    </th>
-                                </tr>
-                            </table>
-                        </div>
-                        <!-- Detailed description -->
-                        During my second year as a Mechatronics student at Linn Benton Community College, I developed and assembled a prototype version of an automated process that involved communication between two Arduino's and a Programmable Logic Controller. Utilized two dual-axis (rotational and linear acting) wafer handling machines which were used as robot arms. The concept image is a possible route for where this project could take the next steps.<br /><br />
-                        <!-- PDF File that comes up when the pdfLogo picture is clicked -->
-                        <div class="color-block1">
-                            <div>If the viewport doesn't load correctly, <a class="bottomLink" target="_blank" href="pdfDocs/Automated Parts Transfer System.pdf">Click Here</a> to open PDF externally.</div>
-                            <br />
-                            <div class="pdfBlock">
-                                <iframe class="pdf-reader" src="pdfDocs/Automated Parts Transfer System.pdf" width="550" height="550"></iframe>
-                            </div>
-                        </div>
-                    </div>
+                <div class="ico">
+                    <div class="entry-dot"></div>
+                    <!-- When project image clicked, opens new tab with that image -->
+                    <a href="https://cad.onshape.com/documents/bb61efcd8cafd93c45bcd32e/w/658a7cc72aebc31515716086/e/ccf98e5e25786474bdabf02e" target="_blank"><img src="images/telescopeCad.png" class="logoHover" /></a>
                 </div>
-
-
-                <!-- Aluminum Mountain Bike Frame Section -->
-                <div class="entry row">
-                    <div class="timespan">
-                        Summer 2016
+                <div class="desc">
+                    <!-- Title Section -->
+                    <h3>Truss-style Newtonian Telescope</h3>
+                    <!-- Title Sub-section -->
+                    <p class="companyName">Personal Hobby Project · Part-time</p>
+                    <div id="locationInfoPlusPDFlogo">
+                        <table>
+                            <tr>
+                                <th>
+                                    <h2>Mar 2014 - May 2016 · 2 yrs 4 mos <br /> Corvallis, Oregon, United States</h2>
+                                </th>
+                                <th>
+                                    <!-- PDF toggle image button -->
+                                    <a id="toggle-button10"><img src="images/pdfLogoWide.png" class="pdfLogoSettings" /></a>
+                                </th>
+                                <th>
+                                    <h2>PDF file is not<br />yet available.</h2>
+                                </th>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="ico">
-                        <div class="entry-dot"></div>
-                        <!-- When project image clicked, opens new tab with that image -->
-                        <a href="images/bikeFrame3.png" target="_blank" class="logoHover" />
-                        <img src="images/bikeFrame3.png" alt="Bike Frame Project Image">
-                        </a>
-                    </div>
-                    <div class="desc">
-                        <!-- Title Section -->
-                        <h3>Aluminum Mountain Bike Frame</h3>
-                        <!-- Title Sub-section -->
-                        <p class="companyName">High School Senior Project · Part-time</p>
-                        <div id="locationInfoPlusPDFlogo">
-                            <table>
-                                <tr>
-                                    <th>
-                                        <h2>Jun 2016 - Sep 2016 · 4 mos <br /> Corvallis, Oregon, United States</h2>
-                                    </th>
-                                    <th>
-                                        <!-- PDF toggle image button -->
-                                        <a id="toggle-button2"><img src="images/pdfLogo.png" class="pdfLogoSettings" /></a>
-                                    </th>
-                                    <th>
-                                        <h2>Icon opens file<br />viewport below.</h2>
-                                    </th>
-                                </tr>
-                            </table>
-                        </div>
-                        <!-- Detailed description -->
-                        I designed, built and tested a fully functional 6061 Aluminum Mountain Bicycle Frame. Some of the challenges included: learning to TIG weld aluminum, reverse engineering of bicycle frame components, project scope and aesthetics.<br /><br />
-                        <!-- PDF File that comes up when the pdfLogo picture is clicked -->
-                        <div class="color-block2">
-                            <div>If the viewport doesn't load correctly, <a class="bottomLink" target="_blank" href="pdfDocs/Aluminum Mountain Bike Frame.pdf">Click Here</a> to open PDF externally.</div>
-                            <br />
-                            <div class="pdfBlock">
-                                <iframe class="pdf-reader" src="pdfDocs/Aluminum Mountain Bike Frame.pdf" width="550" height="550"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="entry row">
-
-                    <div class="timespan">
-                        Started 2014
-                    </div>
-                    <div class="ico">
-                        <div class="entry-dot"></div>
-                        <a href="https://cad.onshape.com/documents/bb61efcd8cafd93c45bcd32e/w/658a7cc72aebc31515716086/e/ccf98e5e25786474bdabf02e" target="_blank"><img src="images/telescopeCad.png" class="logoHover" /></a>
-                    </div>
-                    <div class="desc">
-                        <div class="htxt">
-                            <h3>Newtonian Telescope</h3>
-                            <!--<p class="companyName">Tesla · Full-time</p>-->
-                            <h2>March 2014 - Ongoing<br />Corvallis, Oregon, United States</h2>
-                            On-going hobby project buliding a one-of-a-kind eight inch aperture Newtonian Telescope.<br /><br />
-                            Clicking the image will bring you to the Live 3D model on the OnShape platform.<br /><br />
+                    <!-- Detailed description -->
+                    <!-- PDF File that comes up when the pdfLogo picture is clicked -->
+                    <div class="color-block10">
+                        <div>
+                            Hobby project buliding a smaller 8" aperture version of the legendary <a class="bottomLink" target="_blank" href="https://obsessiontelescopes.com/index.php">Obsession Telescopes</a>. Since I was 14-years old when I started this project, I needed some guidance, so I consulted Kreige and Berry's book, <a class="bottomLink" target="_blank" href="https://obsessiontelescopes.com/publications/index.php#anchor_table_of_contents">The Dobsonian Telescope</a>.<br /><br />
+                            Clicking the telescope image will bring you to the CAD model I drew up on the PTC OnShape platform.<br /><br />
 
                             • Annealed telescope optical blanks with 1800°F kiln<br />
                             • Reverse engineering of existing plans to fit specific size requirements<br />
-                            • Utilized a CNC wood router for side bearing construction as practice<br />
+                            • Utilized a CNC wood router for side rocker construction<br />
                             • 100+ hrs hand grinding the telescope mirror<br />
                             • Extremely stiff frictional bearing mounts for altitude and azimuth axis control<br />
                             • Tight dimensional tolerancing of wood/metal structures<br />
                             • Materials used: plate and borosilicate glass, marine grade plywood, birch plywood, aluminum, and steel<br />
-                            • Mechanical skills: trigonometric calculating for truss design, cantilever loading<br />
+                            • Mechanical skills: trigonometric calculating for truss design, cantilever loading<br /><br /><br />
+
+                            If the viewport doesn't load correctly, <a class="bottomLink" target="_blank" href="pdfDocs/DocumentationSoon.pdf">Click Here</a> to open PDF externally.
+                        </div>
+                        <br />
+                        <div class="pdfBlock">
+                            <iframe class="pdf-reader" src="pdfDocs/DocumentationSoon.pdf" width="550" height="550"></iframe>
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
 
 
 
-            <div style="background-color: #333; padding-top: 1px; margin-top: 10px; ">
+
+
+
+        </div>
+
+
+
+
+        <div style="background-color: #333; padding-top: 1px; margin-top: 10px; ">
 
 
 
 
 
-                <!-- Footer information -->
+            <!-- Footer information -->
 
 
-                <br><br><br>
+            <br><br><br>
 
-                <footer style="margin-left: 25%; margin-right: 25%; ">
-                    <p>Copyright © <a id="p1"></a> Kurt J. Foster. All rights reserved.</p>
-                    <p style="color: grey;">
-                        Some of the tools I used to help build this website: <a class="bottomLink" target="_blank" href="https://platform.openai.com/codex-javascript-sandbox">Codex</a>, <a class="bottomLink" target="_blank" href="https://getbootstrap.com">getBootstrap</a>, <a class="bottomLink" target="_blank" href="https://www.w3schools.com">W3Schools</a>, <a class="bottomLink" target="_blank" href="https://midjourney.com/home/?callbackUrl=%2Fapp%2F">Midjourney</a>, <a class="bottomLink" target="_blank" href="https://jsfiddle.net">JSFiddle</a>.
-                        Some other websites I thought were interesting include; the 2D physics engine <a class="bottomLink" target="_blank" href="https://brm.io/matter-js/">Matter.js</a>, the website I based this portfolio from <a class="bottomLink" target="_blank" href="https://karpathy.ai">karpathy.ai</a>, and a text to 3D generator from OpenAI called <a class="bottomLink" target="_blank" href="https://huggingface.co/spaces/openai/point-e">Point-E</a>. I also think <a class="bottomLink" target="_blank" href="bookList.html">books</a> are cool.<br />
-                    </p>
+            <footer style="margin-left: 25%; margin-right: 25%; ">
+                <p>Copyright © <a id="p1"></a> 2023 by Kurt J. Foster</p>
+                <p style="color: grey;">
+                    Tools I've found interesting: <a class="bottomLink" target="_blank" href="https://www.onshape.com/en/">PTC OnShape</a>,  <a class="bottomLink" target="_blank" href="https://www.autodesk.com/products/autocad">Autodesk AutoCAD</a>, <br /><a class="bottomLink" target="_blank" href="https://www.graebert.com/cad-software/ares-commander/">Gräbert ARES Commander</a>, <a class="bottomLink" target="_blank" href="https://www.raspberrypi.com">Raspberry Pi</a>, <a class="bottomLink" target="_blank" href="https://www.arduino.cc">Arduino</a>, <a class="bottomLink" target="_blank" href="https://www.beagleboard.org">Beagle Board</a>, <a class="bottomLink" target="_blank" href="https://inductiveautomation.com/ignition/maker-edition">Ignition Maker Edition</a>, <a class="bottomLink" target="_blank" href="https://www.docker.com">Docker</a>, <a class="bottomLink" target="_blank" href="https://www.nginx.com">NGINX</a>, <a class="bottomLink" target="_blank" href="https://github.com/jaredhanson/passport">Passport.js</a>, <a class="bottomLink" target="_blank" href="https://socket.io">Socket.IO</a>, <a class="bottomLink" target="_blank" href="https://nodejs.org/">Node.js</a>, <a class="bottomLink" target="_blank" href="https://react.dev">React</a>, <a class="bottomLink" target="_blank" href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html">LTspice</a>, <a class="bottomLink" target="_blank" href="https://www.ni.com/en-us/shop/labview.html">LabVIEW</a>, <a class="bottomLink" target="_blank" href="https://www.mysql.com">MySQL</a>, <a class="bottomLink" target="_blank" href="https://standards.nasa.gov/nasa-technical-standards">NASA Standards</a>, <a class="bottomLink" target="_blank" href="https://exoplanetarchive.ipac.caltech.edu">NASA Exoplanet Archive</a>, <a class="bottomLink" target="_blank" href="https://www.teamviewer.com">TeamViewer</a>, <a class="bottomLink" target="_blank" href="https://github.com/jgraph/drawio">draw.io</a>, <a class="bottomLink" target="_blank" href="https://github.com">GitHub</a>, <a class="bottomLink" target="_blank" href="https://https://www.figma.com">Figma</a>, <a class="bottomLink" target="_blank" href="https://visualstudio.microsoft.com/#vs-section">Visual Studio</a>, <a class="bottomLink" target="_blank" href="https://platform.openai.com/codex-javascript-sandbox">Codex</a>, <a class="bottomLink" target="_blank" href="https://getbootstrap.com">getBootstrap</a>, <a class="bottomLink" target="_blank" href="https://www.w3schools.com">W3Schools</a>, <a class="bottomLink" target="_blank" href="https://midjourney.com/home/?callbackUrl=%2Fapp%2F">Midjourney</a>, <a class="bottomLink" target="_blank" href="https://jsfiddle.net">JSFiddle</a>, <a class="bottomLink" target="_blank" href="https://brm.io/matter-js/">Matter.js</a>, <a class="bottomLink" target="_blank" href="https://github.com/openai/point-e">Point-E</a>.
 
-                    <p style="color: grey;">By accessing this website, you agree to the <a class="bottomLink" target="_blank" href="usePolicy.html">use policy</a>.</p>
+                    <br /><br />
 
-                </footer>
+                    Telescope building resources: <a class="bottomLink" target="_blank" href="https://sites.google.com/site/howardbanichhomepage/home?authuser=0">Howard Banich</a>, <a class="bottomLink" target="_blank" href="https://www.mdpub.com/scopeworks/index.html">Mike Davis</a>, <a class="bottomLink" target="_blank" href="https://www.youtube.com/user/GordonWaite/videos">Gordon Waite</a>, <a class="bottomLink" target="_blank" href="https://www.bbastrodesigns.com/tm.html#myTelescopes">Mel Bartels</a>, as well as the incredible projects displayed at the <a class="bottomLink" target="_blank" href="https://stellafane.org/tm/">Stellafane</a> convention over the years, and finally, no resource on telescope making is complete without <a class="bottomLink" target="_blank" href="https://shopatsky.com/collections/calendars-almanacs/willmann-bell">Willman-Bell</a>.
 
-                <br><br><br><br><br><br>
+                    <br /><br />
 
-            </div>
+                    Miscellaneous: Some <a class="bottomLink" target="_blank" href="bookList.html">books</a> I've read and a how-to on measuring <a class="bottomLink" target="_blank" href="https://astrodennis.com">exoplanets</a>.
 
 
+                </p>
 
-            <!-- This section of code was from the original website meant to hide email from spambots, I added "@" as an image for increased effect -->
-            <script type="text/javascript">var e_is_shown = false;
-                document.getElementById('iemail').addEventListener("click", function () {
-                    let demail = document.getElementById('demail');
-                    demail.innerHTML = '<p style="font-size: 12px;">' + 'fostkurt' + '<img src="images/symbolLogo.png" class="symbolLogoClass">' + 'gmail' + '.com' + '</p>';
-                    demail.style.opacity = e_is_shown ? 0 : 1;
-                    e_is_shown = !e_is_shown;
-                })</script>
+                <p style="color: grey;">By accessing this website, you agree to the <a class="bottomLink" target="_blank" href="usePolicy.html">use policy</a>.</p>
 
-            <script src="script.js"></script>
+            </footer>
+
+            <br><br><br><br><br><br>
+
+        </div>
 
 
-            <!-- Script file for toggling tool for the PDF/CAD viewers for the Projects Secton-->
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-            <!-- Toggling tool operations -->
-            <script>/* For toggling the PDF viewer for Bearing Supply, Sorting, and Placement Machine Section */
-                $("#toggle-button0").click(function () {
-                    $(".color-block0").toggle('invert');
-                });
-                /* For some reason the PDF file directly above comes up initally without the code directly below */
-                $(".color-block0").toggle();
+        <!-- This section of code was from the original website meant to hide email from spambots, I added "@" as an image for increased effect -->
+        <script type="text/javascript">var e_is_shown = false;
+            document.getElementById('iemail').addEventListener("click", function () {
+                let demail = document.getElementById('demail');
+                demail.innerHTML = '<p style="font-size: 12px;">' + 'fostkurt' + '<img src="images/symbolLogo.png" class="symbolLogoClass">' + 'gmail' + '.com' + '</p>';
+                demail.style.opacity = e_is_shown ? 0 : 1;
+                e_is_shown = !e_is_shown;
+            })</script>
 
-
-                /* For toggling the PDF viewer for Automated Parts Transfer System Section */
-                $("#toggle-button1").click(function () {
-                    $(".color-block1").toggle('invert');
-                });
-                /* For some reason the PDF file directly above comes up initally without the code directly below */
-                $(".color-block1").toggle();
+        <script src="script.js"></script>
 
 
-                /* For toggling the PDF viewer for Aluminum Bicycle Frame Section */
-                $("#toggle-button2").click(function () {
-                    $(".color-block2").toggle('invert');
-                });
-                /* For some reason the PDF file directly above comes up initally without the code directly below */
-                $(".color-block2").toggle();
+        <!-- Script file for toggling tool for the PDF/CAD viewers for the Projects Secton-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Toggling tool operations -->
+        <script>/* For toggling the PDF viewer for Bearing Supply, Sorting, and Placement Machine Section */
+            $("#toggle-button0").click(function () {
+                $(".color-block0").toggle('invert');
+            });
+            /* For some reason the PDF file directly above comes up initally without the code directly below */
+            $(".color-block0").toggle();
 
 
-                /* For toggling the 3D CAD viewer for the Hydroponic Machine */
-                $("#toggle-button3").click(function () {
-                    $(".color-block3").toggle('invert');
-                });
-                /* This line is needed, like the examples above, to prevent it from being open initially */
-                $(".color-block3").toggle();
+            /* For toggling the PDF viewer for Automated Parts Transfer System Section */
+            $("#toggle-button1").click(function () {
+                $(".color-block1").toggle('invert');
+            });
+            /* For some reason the PDF file directly above comes up initally without the code directly below */
+            $(".color-block1").toggle();
 
 
-                /* For toggling the 'Info' viewer for the kurtrek-technican-role */
-                $("#toggle-button4").click(function () {
-                    $(".color-block4").toggle('invert');
-                });
-                /* This line is needed, like the examples above, to prevent it from being open initially */
-                $(".color-block4").toggle();
+            /* For toggling the PDF viewer for Aluminum Bicycle Frame Section */
+            $("#toggle-button2").click(function () {
+                $(".color-block2").toggle('invert');
+            });
+            /* For some reason the PDF file directly above comes up initally without the code directly below */
+            $(".color-block2").toggle();
+
+            /* For toggling the PDF viewer for 8" Newtonian Telescope Section */
+            $("#toggle-button10").click(function () {
+                $(".color-block10").toggle('invert');
+            });
+            /* For some reason the PDF file directly above comes up initally without the code directly below */
+            $(".color-block10").toggle();
 
 
-                /* For toggling the 'Info' viewer for the tesla-technican-role */
-                $("#toggle-button5").click(function () {
-                    $(".color-block5").toggle('invert');
-                });
-                /* This line is needed, like the examples above, to prevent it from being open initially */
-                $(".color-block5").toggle();
+            /* For toggling the 3D CAD viewer for the Hydroponic Machine */
+            $("#toggle-button3").click(function () {
+                $(".color-block3").toggle('invert');
+            });
+            /* This line is needed, like the examples above, to prevent it from being open initially */
+            $(".color-block3").toggle();
 
 
-                /* For toggling the 'Info' viewer for the kurtrek-technican-role */
-                $("#toggle-button6").click(function () {
-                    $(".color-block6").toggle('invert');
-                });
-                /* This line is needed, like the examples above, to prevent it from being open initially */
-                $(".color-block6").toggle();
+            /* For toggling the 'Info' viewer for the kurtrek-technican-role */
+            $("#toggle-button4").click(function () {
+                $(".color-block4").toggle('invert');
+            });
+            /* This line is needed, like the examples above, to prevent it from being open initially */
+            $(".color-block4").toggle();
 
 
-                /* For toggling the 'Info' viewer for the tesla-technican-role */
-                $("#toggle-button7").click(function () {
-                    $(".color-block7").toggle('invert');
-                });
-                /* This line is needed, like the examples above, to prevent it from being open initially */
-                $(".color-block7").toggle();
+            /* For toggling the 'Info' viewer for the tesla-technican-role */
+            $("#toggle-button5").click(function () {
+                $(".color-block5").toggle('invert');
+            });
+            /* This line is needed, like the examples above, to prevent it from being open initially */
+            $(".color-block5").toggle();
 
 
-                /* For toggling the 'Info' viewer for the tesla-technican-role */
-                $("#toggle-button8").click(function () {
-                    $(".color-block8").toggle('invert');
-                });
-                /* This line is needed, like the examples above, to prevent it from being open initially */
-                $(".color-block8").toggle();
+            /* For toggling the 'Info' viewer for the kurtrek-technican-role */
+            $("#toggle-button6").click(function () {
+                $(".color-block6").toggle('invert');
+            });
+            /* This line is needed, like the examples above, to prevent it from being open initially */
+            $(".color-block6").toggle();
 
 
-                /* For toggling the 'Info' viewer for the HP-maintenance-technican-role */
-                $("#toggle-button9").click(function () {
-                    $(".color-block9").toggle('invert');
-                });
-                /* This line is needed, like the examples above, to prevent it from being open initially */
-                $(".color-block9").toggle();</script>
+            /* For toggling the 'Info' viewer for the tesla-technican-role */
+            $("#toggle-button7").click(function () {
+                $(".color-block7").toggle('invert');
+            });
+            /* This line is needed, like the examples above, to prevent it from being open initially */
+            $(".color-block7").toggle();
 
 
+            /* For toggling the 'Info' viewer for the tesla-technican-role */
+            $("#toggle-button8").click(function () {
+                $(".color-block8").toggle('invert');
+            });
+            /* This line is needed, like the examples above, to prevent it from being open initially */
+            $(".color-block8").toggle();
+
+
+            /* For toggling the 'Info' viewer for the HP-maintenance-technican-role */
+            $("#toggle-button9").click(function () {
+                $(".color-block9").toggle('invert');
+            });
+            /* This line is needed, like the examples above, to prevent it from being open initially */
+            $(".color-block9").toggle();</script>
+
+
+        <!-- Typewriter effect for the top of the page-->
+        <script>
+            var i = 0;
+            var txt = 'I enjoy building, testing, and repairing electromechanical systems 🛠️';
+            var speed = 40;
+
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }</script>
 
 
 
