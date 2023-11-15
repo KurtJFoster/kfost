@@ -80,12 +80,12 @@
                 <!-- Title Section -->
                 <h3>Repair and Maintenance Technician</h3>
                 <!-- Title Sub-section -->
-                <p class="companyName">Hewlett-Packard · Full-time <a class="bottomLink" target="_blank" href="https://www.kforce.com">Kforce Contractor</a></p>
+                <p class="companyName">Hewlett-Packard, HP Inc. · Full-time <a class="bottomLink" target="_blank" href="https://www.kforce.com">Kforce Contractor</a></p>
                 <div id="locationInfoPlusPDFlogo">
                     <table>
                         <tr>
                             <th>
-                                <h2>Aug 2023 - Present · 2 mos <br /> Corvallis, Oregon, United States</h2>
+                                <h2>Aug 2023 - Present · 4 mos <br /> Corvallis, Oregon, United States</h2>
                             </th>
                             <th>
                                 <!-- INFO toggle image button -->
@@ -134,7 +134,7 @@
                 <!-- Title Section -->
                 <h3>Automation Systems Technician</h3>
                 <!-- Title Sub-section -->
-                <p class="companyName">Enriched Gravity · Full-time</p>
+                <p class="companyName">Enriched Gravity, ABN · Full-time</p>
                 <div id="locationInfoPlusPDFlogo">
                     <table>
                         <tr>
@@ -215,7 +215,7 @@
                 <!-- Title Section -->
                 <h3>Equipment Maintenance Technician</h3>
                 <!-- Title Sub-section -->
-                <p class="companyName">Tesla · Full-time</p>
+                <p class="companyName">Tesla, Inc. · Full-time</p>
                 <div id="locationInfoPlusPDFlogo">
                     <table>
                         <tr>
@@ -311,7 +311,7 @@
                 <!-- Title Section -->
                 <h3>Automation Technician Intern</h3>
                 <!-- Title Sub-section -->
-                <p class="companyName">Andrews Cooper · Part-time</p>
+                <p class="companyName">Andrews Cooper, Inc. · Part-time</p>
                 <div id="locationInfoPlusPDFlogo">
                     <table>
                         <tr>
@@ -333,12 +333,12 @@
                 <!-- Info section that comes up when the INFO logo picture is clicked -->
                 <div class="color-block8">
                     <div class="infoBlock">
-                    <!-- WE NEED TO BUILD A NEW CLASS MAYBE? TRY REGULAR TEXT HERE FIRST -->
-                    • Kept high-level attention to detail when fabricating/assembling complex robotic machinery<br />
-                    • Drilled, tapped, fastened components for industrial electrical panels and pneumatic panels<br />
-                    • Wired control panels using electrical diagrams, red-lined issues and reported to engineering<br />
-                    • Stripped, crimped, assembled, MIL-Spec multi-pin connectors (up to 56-pin)<br />
-                    • Followed work procedures associated with procurement for timely machine assembly<br />
+                <!-- WE NEED TO BUILD A NEW CLASS MAYBE? TRY REGULAR TEXT HERE FIRST -->
+                • Kept high-level attention to detail when fabricating/assembling complex robotic machinery<br />
+                • Drilled, tapped, fastened components for industrial electrical panels and pneumatic panels<br />
+                • Wired control panels using electrical diagrams, red-lined issues and reported to engineering<br />
+                • Stripped, crimped, assembled, MIL-Spec multi-pin connectors (up to 56-pin)<br />
+                • Followed work procedures associated with procurement for timely machine assembly<br />
                     </div>
                 </div>
             </div>
@@ -564,7 +564,7 @@
                     <div class="color-block10">
                         <div>
                             Hobby project buliding a smaller 8" aperture version of the legendary <a class="bottomLink" target="_blank" href="https://obsessiontelescopes.com/index.php">Obsession Telescopes</a>. Since I was 14-years old when I started this project, I needed some guidance, so I consulted Kreige and Berry's book, <a class="bottomLink" target="_blank" href="https://obsessiontelescopes.com/publications/index.php#anchor_table_of_contents">The Dobsonian Telescope</a>.<br /><br />
-                            Clicking the telescope image will bring you to the CAD model I drew up on the PTC OnShape platform.<br /><br />
+                            Clicking the telescope image will bring you to a CAD model I drew up on the PTC OnShape platform that accurately matches the size of the telescope components. This CAD model however is not yet complete, as doing this can be very time consuming. It's currently lacking a primary mirror cell in the CAD and much of the components of the secondary cage.<br /><br />
 
                             • Annealed telescope optical blanks with 1800°F kiln<br />
                             • Reverse engineering of existing plans to fit specific size requirements<br />
@@ -614,12 +614,8 @@
 
                     <br /><br />
 
-                    Telescope building resources: <a class="bottomLink" target="_blank" href="https://sites.google.com/site/howardbanichhomepage/home?authuser=0">Howard Banich</a>, <a class="bottomLink" target="_blank" href="https://www.mdpub.com/scopeworks/index.html">Mike Davis</a>, <a class="bottomLink" target="_blank" href="https://www.youtube.com/user/GordonWaite/videos">Gordon Waite</a>, <a class="bottomLink" target="_blank" href="https://www.bbastrodesigns.com/tm.html#myTelescopes">Mel Bartels</a>, as well as the incredible projects displayed at the <a class="bottomLink" target="_blank" href="https://stellafane.org/tm/">Stellafane</a> convention over the years, and finally, no resource on telescope making is complete without <a class="bottomLink" target="_blank" href="https://shopatsky.com/collections/calendars-almanacs/willmann-bell">Willman-Bell</a>.
 
-                    <br /><br />
-
-                    Miscellaneous: Some <a class="bottomLink" target="_blank" href="bookList.html">books</a> I've read and a how-to on measuring <a class="bottomLink" target="_blank" href="https://astrodennis.com">exoplanets</a>.
-
+                    Miscellaneous: <a class="bottomLink" target="_blank" href="bookList.html">Books</a>.
 
                 </p>
 
@@ -733,14 +729,26 @@
                 $(".color-block9").toggle('invert');
             });
             /* This line is needed, like the examples above, to prevent it from being open initially */
-            $(".color-block9").toggle();</script>
+            $(".color-block9").toggle();
+
+
+            /* For toggling the 'Info' viewer for the Binoscope project */
+            $("#toggle-button11").click(function () {
+                $(".color-block11").toggle('invert');
+            });
+            /* This line is needed, like the examples above, to prevent it from being open initially */
+            $(".color-block11").toggle();
+
+        </script>
+
+
 
 
         <!-- Typewriter effect for the top of the page-->
         <script>
             var i = 0;
             var txt = 'I enjoy building, testing, and repairing electromechanical systems 🛠️';
-            var speed = 40;
+            var speed = 10;
 
             function typeWriter() {
                 if (i < txt.length) {
