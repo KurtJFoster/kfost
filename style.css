@@ -147,40 +147,11 @@ dico {
 }
 
 
-/* Profile Picture */
-#dpic {
-    grid-column: span 6;
-    text-align: right;
-}
 
 
-#dpic img {
-    width: 250px;
-    height: 250px;
-    border-radius: 125px;
-}
-
-#ddesc {
-    padding-top: 20px;
-    padding-left: 20px;
-    grid-column: span 6;
-}
-
-@media (max-width: 991px) {
-    #dpic {
-        grid-column: span 12;
-        text-align: center;
-    }
-
-    #ddesc {
-        grid-column: span 12;
-        padding-top: 20px;
-        text-align: center;
-    }
-}
 
 h1 {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: normal;
     padding: 0;
     margin: 0;
