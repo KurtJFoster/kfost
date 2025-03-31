@@ -1,13 +1,84 @@
 ﻿<!DOCTYPE html>
-<html>
-	<head>
-		<title>
-			https://kfost.com/
-		</title>
-	</head>
-	<body>
-		<p>
-			https://kfost.com/
-		</p>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple IDE Design</title>
+    <style>
+        /* Dark background for IDE look */
+        body {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* IDE container */
+        .ide-container {
+            display: flex;
+            background-color: #252526;
+            border: 1px solid #3c3c3c;
+            width: 600px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Line numbers */
+        .line-numbers {
+            padding-right: 10px;
+            text-align: right;
+            color: #858585;
+            user-select: none;
+            font-size: 14px;
+        }
+
+        /* Code editor area */
+        .code-editor {
+            white-space: pre-wrap;
+            font-size: 14px;
+            color: #d4d4d4;
+        }
+
+        /* Syntax highlighting */
+        .keyword {
+            color: #569CD6;
+        }
+
+        .function {
+            color: #DCDCAA;
+        }
+
+        .string {
+            color: #CE9178;
+        }
+    </style>
+</head>
+<body>
+    <div class="ide-container">
+        <div class="line-numbers">
+            <span>1</span><br>
+            <span>2</span><br>
+            <span>3</span><br>
+            <span>4</span><br>
+            <span>5</span><br>
+            <span>6</span><br>
+            <span>7</span><br>
+            <span>8</span><br>
+            <span>9</span><br>
+            <span>10</span><br>
+        </div>
+        <div class="code-editor">
+            <pre>
+<span class="keyword">function</span> <span class="function">helloWorld</span>() {
+    <span class="keyword">console</span>.log(<span class="string">"Hello, World!"</span>);
+}
+            </pre>
+        </div>
+    </div>
+</body>
 </html>
