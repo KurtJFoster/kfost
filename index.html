@@ -1,1 +1,653 @@
-﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>https://kfost.com</title>
+  <style>
+    /* Global Styling */
+    body {
+      background: linear-gradient(135deg, #141414, #0d0d0d);
+      color: #fff;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Navbar */
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 10px;
+      background: rgba(34, 34, 34, 0.95);
+      border-radius: 8px;
+      margin: 0;
+    }
+    .navbar li {
+      margin: 0 15px;
+    }
+    .navbar a {
+      color: #979797;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+    .navbar a:hover {
+      color: #ffffff;
+    }
+    /* Profile Section */
+    .profile-section {
+      display: flex;
+      gap: 20px;
+      background: linear-gradient(135deg, #1c1c1c, #141414);
+      border-radius: 8px;
+      padding: 40px;
+      margin-top: 20px;
+      align-items: center;
+    }
+    .profile-info {
+      flex: 1;
+      max-width: 33%;
+      text-align: left;
+    }
+    .profile-info .profile-img {
+      width: 150px;
+      height: 150px;
+      background: #222;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .profile-info h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+    .profile-info p {
+      margin: 10px 0;
+      font-size: 1.2em;
+      color: #aaa;
+    }
+    .portfolio-apps {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+    }
+    .portfolio-apps p {
+      margin: 0 0 10px 0;
+      font-size: 1em;
+      color: #ccc;
+    }
+    .portfolio-apps .app-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .portfolio-apps .app-button {
+      padding: 10px 20px;
+      background: transparent;
+      border: 2px solid #ffffff;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s, color 0.3s;
+    }
+    .portfolio-apps .app-button:hover {
+      background: #ffffff;
+      color: #141414;
+    }
+    /* Section Styling */
+    .section {
+      margin-top: 40px;
+      padding: 20px;
+      background: linear-gradient(135deg, #1f1f1f, #161616);
+      border-radius: 8px;
+    }
+    .section h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    /* Education Section */
+    .education-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .education-item {
+      flex: 1 1 calc(50% - 20px);
+      background: linear-gradient(135deg, #1e1e1e, #171717);
+      border-radius: 8px;
+      padding: 20px;
+      border: 1px solid #333;
+    }
+    .education-item h3 {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+    .education-item p {
+      font-size: 0.95em;
+      line-height: 1.5;
+      color: #bbb;
+    }
+    /* Work Experience */
+    .work-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .work-item {
+      flex: 1 1 calc(50% - 20px);
+      background: linear-gradient(135deg, #1e1e1e, #171717);
+      border-radius: 8px;
+      padding: 20px;
+      border: 1px solid #333;
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+    .company-logo {
+      width: 80px;
+      height: 80px;
+      background: #222;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    .work-content h3 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    .work-content h4 {
+      margin: 5px 0;
+      font-weight: normal;
+      color: #ffffff;
+    }
+    .work-content p {
+      font-size: 0.95em;
+      line-height: 1.5;
+      color: #bbb;
+    }
+    /* Projects */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .project-item {
+      background: linear-gradient(135deg, #1e1e1e, #171717);
+      border-radius: 8px;
+      padding: 15px;
+      border: 1px solid #333;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .project-item .project-image {
+      background: #222;
+      height: 150px;
+      border-radius: 8px;
+      overflow: hidden;   /* Ensures the image is clipped to the rounded corners */
+    }
+    .project-item .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .project-item h3 {
+      margin: 0;
+      font-size: 1.3em;
+    }
+    .project-item p {
+      font-size: 0.95em;
+      line-height: 1.4;
+      color: #bbb;
+    }
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: linear-gradient(135deg, #1c1c1c, #141414);
+      border-radius: 8px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    .footer a {
+      color: #979797;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .profile-section {
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile-info, .portfolio-apps {
+        max-width: 100%;
+        text-align: center;
+      }
+      .work-item, .education-item {
+        flex: 1 1 100%;
+      }
+      .work-item {
+        flex-direction: column;
+        align-items: center;
+      }
+      .company-logo {
+        margin-bottom: 15px;
+      }
+      .work-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#work">Work History</a></li>
+        <li><a href="#education">Education</a></li>
+		<!--
+        <li><a href="#contact">Contact</a></li>
+		-->
+      </ul>
+    </nav>
+    
+    <!-- Profile Section with Left/Right Layout -->
+    <header class="profile-section">
+      <div class="profile-info">
+		<!--
+        <div class="profile-img">
+          <img src="images/profile-pic.jpg" alt="Profile Picture" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+        </div>
+		-->
+        <h1 style="font-size: 25px;">Kurt J. Foster</h1>
+        <p>Webpage Status: <i><a style="color: green">Updated June 2025</a></i></p>
+      </div>
+      <div class="portfolio-apps">
+        <div class="app-buttons">
+		<!--
+		  <a href="#" class="app-button">GitHub</a>
+          <a href="#" class="app-button">Onshape</a>
+          <a href="#" class="app-button">Email</a>
+		-->
+        </div>
+      </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="education-list">
+        <div class="education-item">
+		  <h1 style="font-size: 25px;">About</h1>
+          <p>
+			Welcome to my website. Here you will find my work history and some projects I am working on.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-item">
+          <div class="project-image">
+            <img src="images/binoscope-pic.png" alt="Binocular Picture" style="width: 250px; height: 150px; object-fit: cover; border-radius: 8px;">
+          </div>
+          <h3>Portable, Meter-class Binoscope</h3>
+          <p>Currently in the early design phase, testing scaled down model to verify the optical system is feasible.</p>
+          <div class="navbar" style="font-family: 'Brush Script MT', cursive;">
+            <p>
+              <a href="https://cad.onshape.com/documents/5d92fe101b7e9bf07639868a/w/6050646a7c17f19ee574ff94/e/09aea8e79783908266cad741?renderMode=0&uiState=67aeb30c34b02f69725172fc" target="_blank"><b>onshape-3d</b></a>
+              <img src="images/openNewTab.png"><br>
+              <a href="https://docs.google.com/document/d/1WxkYBWqdLyLhxgRh7ZfJaYaSsf6swe2fiz7W-Qj-lPA/edit?usp=sharing" target="_blank"><b>google-doc</b></a>
+              <img src="images/openNewTab.png">
+            </p>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="images/dosing-pic.png" alt="Dosing Machine Picture" style="width: 250px; height: 150px; object-fit: cover; border-radius: 8px;">
+          </div>
+          <h3>Automatic Dosing Unit</h3>
+          <p>Designing, building, and testing a UL-compliant device for automated gravity-fed dosing, possible application within hydroponics.</p>
+          <div class="navbar" style="font-family: 'Brush Script MT', cursive;">
+            <p>
+              <a href="https://cad.onshape.com/documents/14566fd902a0be0d8c1e67b7/w/0ff7ca55352d42e768777c6e/e/b31f96b639cae0abea585bb0?renderMode=0&leftPanel=false&uiState=67afa1f73da8d76be352a58f" target="_blank"><b>onshape-3d</b></a>
+              <img src="images/openNewTab.png">
+            </p>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-image"></div>
+          <h3>Bearing Supply, Sorting, and Placement Machine</h3>
+          <p>Places bearings into a housing on a conveyor line. It requires 5 DCVs, 5 pneumatic cylinders, and 12 sensors for operation.</p>
+          <div class="navbar" style="font-family: 'Brush Script MT', cursive;">
+            <p>
+              <a href="docs/bearing-supply.pdf" target="_blank"><b>pdf-doc</b></a>
+              <img src="images/openNewTab.png">
+            </p>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-image"></div>
+          <h3>Automated Parts Transfer System</h3>
+          <p>Involves signal transmission between two Arduino's and a PLC while utilizing a pair of dual-axis wafer handling machines.</p>
+          <div class="navbar" style="font-family: 'Brush Script MT', cursive;">
+            <p>
+              <a href="docs/parts-transfer.pdf" target="_blank"><b>pdf-doc</b></a>
+              <img src="images/openNewTab.png">
+            </p>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-image"></div>
+          <h3>Truss-style Newtonian Telescope</h3>
+          <p>[Under construction]</p>
+        </div>
+        <div class="project-item">
+          <div class="project-image"></div>
+          <h3>Aluminum Mountain Bike Frame</h3>
+          <p>[Under construction]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work" class="section">
+      <h2>Work History</h2>
+      <div class="work-list">
+        <div class="work-item">
+          <div class="company-logo">
+            <img src="images/ninkasi-logo.png" alt="Ninkasi Logo" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+          </div>
+          <div class="work-content">
+            <h3>Packaging Maintenance Technician</h3>
+            <h4>Ninkasi Brewing/Great Frontier Holdings</h4>
+            <h5 style="color: grey;">October 2024 - December 2024 · 3 months · Eugene, OR</h5>
+            <p>
+			• Act as a technical expert on the assigned packaging line, consulting external resources as required<br>
+			• Perform equipment adjustments and enhancements as required by production demands<br>
+			• Ensure the Packaging Team understands and adheres to the preventive maintenance program<br>
+			• Follow Ninkasi’s preventative maintenance program, making improvements/updates as needed<br>
+			• Perform preventative maintenance and trouble-shoot mechanical issues as they arise<br>
+			• Report to Facilities Manager to coordinate additional maintenance, as necessary<br>
+			• Maintain SOPs to meet changing machine specifications, training needs, and an evolving business<br>
+			• Perform all tasks in an efficient, safe, and productive manner<br>
+			</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="company-logo">
+            <img src="images/tesla-logo.png" alt="HP Logo" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+          </div>
+          <div class="work-content">
+            <h3>Equipment Maintenance Technician</h3>
+            <h4>Tesla, Inc.</h4>
+            <h5 style="color: grey;">April 2024 - June 2024 · 3 months · Sparks, NV</h5>
+            <p>Responsible for repairing manufacturing equipment in Powertrain Manufacturing.</p>
+			<p>Applied technical skills to install, maintain and repair high speed high volume mechanical and electrical systems, factory automation and robotics.</p>
+			<p>
+              • Troubleshot and maintained 70+ large Fanuc industrial welding robots for the battery enclosure line for the Tesla vehicles<br>
+              • First responding problem-solver managing machine breakdowns and full recovery<br>
+              • Diagnosing machine faults and laying out plan to execute repair or escalation procedure<br>
+              • Electrical systems ranging from 24VDC to 480VAC 3-phase<br>
+              • Repaired automated machinery, requiring full knowledge of the functional operation<br>
+              • Communicated with supervisors and management for fast repair execution<br>
+              • Talked with production associates on production ergonomics and improving machine output<br><br>
+			  Work history:<br><br>
+			  Apr—Jun 2021 • 3 mos.<br>
+			  Model 3/Y Battery Pack, Enclosure Weld<br>
+			</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="company-logo">
+            <img src="images/hp-logo.png" alt="HP Logo" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+          </div>
+          <div class="work-content">
+            <h3>Repair and Maintenance Technician</h3>
+            <h4>HP, Inc. contracted with Kforce, Inc.</h4>
+            <h5 style="color: grey;">August 2023 - December 2023 · 5 months · Corvallis, OR</h5>
+            <p>Repairing industrial automated systems.</p>
+            <p>
+              • Editing and troubleshooting PLC ladder logic and command language programs<br>
+              • Determining root cause analysis of circuitry, control panels, and mechanical systems<br>
+              • Following through with timely repairs, updates, and documentation of issues resolved<br>
+              • First responding troubleshooter diagnosing a wide variety of electromechanical issues<br>
+              • Participating in the development of maintenance and operational documentation of equipment<br>
+              • Evaluating spare part needs and use available systems to warehouse and track inventory/availability<br>
+              • Interpreting mechanical drawings, schematics, printouts, specifications, and test procedures<br>
+              • Ensuring measuring/diagnosing instruments are calibrated and verified on a regular basis<br>
+              • Working with my fellow Technicians and Engineers on resolving issues by communicating effectively and ultimately managing our tasks for efficent completion<br>
+            </p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="company-logo">
+            <img src="images/eg-logo.jpg" alt="Automated Hydroponic Logo" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+          </div>
+          <div class="work-content">
+            <h3>Automation Systems Technician</h3>
+            <h4>Automated Hydroponic Technologies, ABN</h4>
+            <h5 style="color: grey;">March 2021 - July 2023 · 2 years 5 months · Corvallis, OR</h5>
+            <p>Gravity-fed nutrient dosing for hydroponics.</p>
+			<p>Utilized my automation experience to design, build, and test a UL-compliant 
+			consumer appliance that combines microcontrollers and industrial automation 
+			technology into a prototype product that could ideally sustain a hydroponics 
+			farming operation for years without major repairs required.</p>
+			<p>Responsibilities:</p>
+			<p>	
+				• Testing components at an individual level, keeping track of performance measured <br>
+				• Translating custom CAD to real world results, and constant iteration through the issues <br>
+				• Taking the relevant safety precautions with machine start up, shut down, and troubleshooting <br>
+				• Continuous improvement of design, as it progresses from test bed to prototype <br>
+				• Updating ladder logic to fit individual component testing, and associated wiring changes <br>
+				• Creating accurate analysis of data recorded, in order to optimize machine output in performance <br>
+			</p>
+			<p>Direct-tasks:</p>
+			<p>
+				• Adhering to UL standards of electrical design practices in prototype construction <br>
+				• Created electrical, fluid, and mechanical drawings for assembly of fixtures & prototypes <br>
+				• Used a variety of hand tools for assembly and construction of electro-mechanical systems <br>
+				• Developed CAD and 2D engineering drawings for component fabrication and assembly <br>
+				• Used continuous improvement for design to lower cost, increase quality of automated devices <br>
+				• Programmed and wired PLC and microcontroller devices for real-time process control <br>
+				• Used a variety of hand tools: WAGO Variocrimp, self-adjusting wire stripper, heat-guns, tap & die sets, metal jig saws, and other common shop tools <br>
+				• Electrical wiring involving 3.3VDC to 120VAC for powering pumps, valves, and associated electrical equipment, all organized to be functional, safe & user friendly <br>
+			</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="company-logo">
+            <img src="images/tesla-logo.png" alt="Tesla Logo" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+          </div>
+          <div class="work-content">
+            <h3>Equipment Maintenance Technician</h3>
+            <h4>Tesla, Inc.</h4>
+            <h5 style="color: grey;">October 2020 - February 2021 · 5 months · Sparks, NV</h5>
+            <p>Responsible for repairing manufacturing equipment in Powertrain Manufacturing.</p>
+            <p>Applied technical skills to install, maintain and repair high speed high volume mechanical and electrical systems, factory automation and robotics.</p>
+            <p>
+              • First responding problem-solver managing machine breakdowns and full recovery<br>
+              • Diagnosing machine faults and laying out plan to execute repair or escalation procedure<br>
+              • Electrical systems ranging from 24VDC to 480VAC 3-phase<br>
+              • Repaired automated machinery, requiring full knowledge of the functional operation<br>
+              • Communicated with supervisors and managment for fast repair execution<br>
+              • Talked with production associates on production ergonomics and improving machine output<br>
+            </p>
+            <p><b>Work history:</b></p>
+            <p>
+              Jan—Feb 2021 • 2 mos.<br>
+              Model 3 Drive Unit, Final Assembly<br><br>
+              Oct—Dec 2020 • 3 mos.<br>
+              Model 3 Drive Unit, Test Line & Raven Line<br><br>
+            </p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="company-logo">
+            <img src="images/eg-logo.jpg" alt="EG Logo" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+          </div>
+          <div class="work-content">
+            <h3>Automation Systems Technician</h3>
+            <h4>Automated Hydroponic Technologies, ABN</h4>
+            <h5 style="color: grey;">August 2019 - September 2020 · 1 year 2 months · Corvallis, OR</h5>
+            <p>Utilized automation for the advancement of easy to use and energy efficient farms.</p>
+            <p>First goal was getting product fit from prototypes of automated nutrient dosing systems.</p>
+            <p>
+              • Adhering to UL standards of electrical design practices in prototype construction<br>
+              • Created electrical, fluid, and mechanical drawings for assembly of fixtures & prototypes<br>
+              • Used a variety of hand tools for assembly and construction of electro-mechanical systems<br>
+              • Developed CAD and 2D engineering drawings for component fabrication and assembly<br>
+              • Used continuous improvement for design to lower cost, increase quality of automated devices<br>
+              • Programmed and wired PLC and microcontroller devices for real-time process control<br>
+              • Used a variety of hand tools: WAGO Variocrimp, self-adjusting wire stripper, heat-guns, tap & die sets, metal jig saws, and other common shop tools<br>
+              • Electrical wiring involving 12VDC to 120VAC for powering pumps, valves, and associated electrical equipment, all organized to be functional, safe & user friendly<br>
+            </p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="company-logo">
+            <img src="images/tesla-logo.png" alt="Tesla Logo" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+          </div>
+          <div class="work-content">
+            <h3>Equipment Maintenance Technician</h3>
+            <h4>Tesla, Inc.</h4>
+            <h5 style="color: grey;">June 2018 - July 2019 · 1 year 2 months · Sparks, NV</h5>
+            <p>Troubleshot & maintained machinery for a fast production ramp.</p>
+            <p>Worked within Powertrain Manufacturing, from batteries to drive units.</p>
+            <p>
+              • Diagnosed equipment failures and suggested improvements to process engineering<br>
+              • Saved 500+ DUs from fallout in q2 2019 ($1mm+ savings according to Sr. Process Engineer)<br>
+              • Repaired automated machinery, requiring full knowledge of the functional operation<br>
+              • Mentored production associates on equipment updates and safe throughput<br>
+              • Replaced required mechanical and electrical components of production equipment<br>
+              • Acted with the first intent being on creating a safe working environment for everyone<br>
+            </p>
+            <p><b>Work history:</b></p>
+            <p>
+              Jan—Jul 2019 • 7 mos.<br>
+              Model 3 Drive Unit, Test Line<br><br>
+              Sep—Dec 2018 • 4 mos.<br>
+              Model 3 Drive Unit, Final Assembly<br><br>
+              Jun—Aug 2018 • 3 mos.<br>
+              Model 3 Battery Module, C3A<br>
+            </p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="company-logo">
+            <img src="images/ac-logo.png" alt="AC Logo" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+          </div>
+          <div class="work-content">
+            <h3>Automation Technician Intern</h3>
+            <h4>Andrews Cooper, Inc.</h4>
+            <h5 style="color: grey;">March 2018 - May 2018 · 3 months · Corvallis, OR</h5>
+            <p>Built custom manufacturing equipment.</p>
+			<p>Assembled and tested equipment for the Daimler electric truck, and assembled test cells for the optical alignment of the Steam VR headset.</p>
+            <p>
+              • Kept high-level attention to detail when fabricating/assembling complex robotic machinery<br>
+              • Drilled, tapped, fastened components for industrial electrical panels and pneumatic panels<br>
+              • Wired control panels using electrical diagrams, red-lined issues and reported to engineering<br>
+              • Stripped, crimped, assembled, MIL-Spec multi-pin connectors (up to 56-pin)<br>
+              • Followed work procedures associated with procurement for timely machine assembly<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="education-list">
+        <div class="education-item">
+          <h3>
+            <i>Associate of Applied Science</i>,<br>
+            Industrial Automation Technology
+          </h3>
+          <p>[Linn-Benton Community College] 2016 to 2018</p>
+          <p>Accreditation: <i>Northwest Commission on Colleges and Universities</i></p>
+          Learned the fundamentals of:
+            <ul style="font-size: 14px; color: lightgrey;">
+              <li>Electro-mechanical assembly and testing</li>
+              <li>Programmable Logic Controllers</li>
+              <li>Industrial maintenance</li>
+              <li>Electrical troubleshooting</li>
+              <li>Hydraulic/pneumatic assembly and testing</li>
+              <li>Process-control/instrumentation</li>
+            </ul>
+          Engineering Electives:
+            <ul style="font-size: 14px; color: lightgrey;">
+              <li>Computer Science Orientation</li>
+              <li>Microcontrollers in Research and Design</li>
+              <li>Engineering Orientation</li>
+              <li>Preparatory Chemistry</li>
+              <li>Introduction to AutoCAD</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+	
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>&copy; 2025 by Kurt Foster</p>
+      <p>
+        Tools I've found interesting: 
+        <a href="https://www.onshape.com" target="_blank">PTC OnShape</a>, 
+        <a href="https://www.autodesk.com" target="_blank">Autodesk AutoCAD</a>, 
+        <a href="https://www.graebert.com/ares-commander" target="_blank">Gräbert ARES Commander</a>, 
+        <a href="https://www.raspberrypi.com" target="_blank">Raspberry Pi</a>, 
+        <a href="https://www.arduino.cc" target="_blank">Arduino</a>, 
+        <a href="https://beagleboard.org" target="_blank">Beagle Board</a>, 
+        <a href="https://inductiveautomation.com" target="_blank">Ignition Maker Edition</a>, 
+        <a href="https://www.docker.com" target="_blank">Docker</a>, 
+        <a href="https://www.nginx.com" target="_blank">NGINX</a>, 
+        <a href="https://www.passportjs.org" target="_blank">Passport.js</a>, 
+        <a href="https://socket.io" target="_blank">Socket.IO</a>, 
+        <a href="https://nodejs.org" target="_blank">Node.js</a>, 
+        <a href="https://reactjs.org" target="_blank">React</a>, 
+        <a href="https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html" target="_blank">LTspice</a>, 
+        <a href="https://www.ni.com/en-us/shop/labview.html" target="_blank">LabVIEW</a>, 
+        <a href="https://www.mysql.com" target="_blank">MySQL</a>, 
+        <a href="https://standards.nasa.gov" target="_blank">NASA Standards</a>, 
+        <a href="https://exoplanetarchive.ipac.caltech.edu" target="_blank">NASA Exoplanet Archive</a>, 
+        <a href="https://www.teamviewer.com" target="_blank">TeamViewer</a>, 
+        <a href="https://www.diagrams.net" target="_blank">draw.io</a>, 
+        <a href="https://joinmastodon.org" target="_blank">Mastodon</a>, 
+        <a href="https://github.com" target="_blank">GitHub</a>, 
+        <a href="https://www.figma.com" target="_blank">Figma</a>, 
+        <a href="https://visualstudio.microsoft.com" target="_blank">Visual Studio</a>, 
+        <a href="https://openai.com/blog/openai-codex" target="_blank">Codex</a>, 
+        <a href="https://getbootstrap.com" target="_blank">getBootstrap</a>, 
+        <a href="https://www.w3schools.com" target="_blank">W3Schools</a>, 
+        <a href="https://www.midjourney.com" target="_blank">Midjourney</a>, 
+        <a href="https://jsfiddle.net" target="_blank">JSFiddle</a>, 
+        <a href="https://brm.io/matter-js" target="_blank">Matter.js</a>, 
+        <a href="https://github.com/openai/point-e" target="_blank">Point-E</a>
+      </p>
+      <p>By accessing this website, you agree to the <a href="use-policy.html" target="_blank">use policy</a>.</p>
+    </footer>
+    
+  </div>
+</body>
+</html>
